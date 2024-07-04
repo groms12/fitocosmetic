@@ -2482,7 +2482,6 @@ input {
   justify-content: flex-start;
   gap: 12px;
   margin-top: 24px;
-  margin-bottom: 24px;
 }
 
 .market {
@@ -2505,6 +2504,18 @@ input {
 }
 .market--wb:hover {
   background-color: rgb(149, 39, 135);
+}
+
+.buy-markets {
+  padding: 20px 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12);
+}
+.buy-markets__title {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 840px) {

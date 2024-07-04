@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Каталог товаров</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__media">
+            <div class="container">
+                <img src="assets/img/icons/menu-media.svg" alt="menu">
+                <img src="assets/img/icons/logo-media.svg" alt="logo">
+                <img src="assets/img/icons/search.svg" alt="поиск">
+            </div>
+            <div class="header__media-bottom media-bottom">
+                <div class="container">
+                    <div class="media-bottom__items">
+                        <a href="index.html" class="media-bottom__item media-bottom__item--active">
+                            <img src="assets/img/icons/home.svg" alt=""><span>Главная</span>
+                        </a>
+                        <a href="catalog.html" class="media-bottom__item">
+                            <img src="assets/img/icons/catalog.svg" alt=""><span>Каталог</span>
+                        </a>
+                        <a href="basket.html" class="media-bottom__item">
+                            <img src="assets/img/icons/heart.svg" alt=""><span>Избранное</span>
+                        </a>
+                        <a href="basket.html" class="media-bottom__item">
+                            <img src="assets/img/icons/bag.svg" alt=""><span>Корзина</span>
+                        </a>
+                        <a href="index.html" class="media-bottom__item">
+                            <img src="assets/img/icons/user.svg" alt=""><span>Профиль</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu__media">
+            <div class="header__city">
+                <img src="assets/img/icons/location.svg" alt="place">
+                <span>Москва</span>
+            </div>
+            <div class="menu__media-items">
+                <a href="catalog.html">Каталог</a>
+                <a href="#">Акции</a>
+                <a href="catalog-brands.html">Бренды</a>
+                <span></span>
+                <a href="#">О нас</a>
+                <a href="#">Оплата и доставка</a>
+                <a href="#">Гарантия и возврат</a>
+                <a href="#">Сроки доставки</a>
+                <a href="#">Карьера</a>
+                <span></span>
+            </div>
+            <div class="menu__media-info">
+                <div class="footer__contacts">
+                    <a href="tel:88007778549" class="footer__phone">8 800 777 85 49</a>
+                    <p class="footer__time">с 09:00 до 18:00 пн-пт</p>
+                    <p class="footer__address">117420, Москва, ул. Намёткина, 12а</p>
+                    <div class="footer__social">
+                        <a href="#"><img src="assets/img/icons/telegram.svg" alt="telegramm" class="footer__icon"></a>
+                        <a href="#"><img src="assets/img/icons/vk.svg" alt="vkontakte" class="footer__icon"></a>
+                        <a href="#"><img src="assets/img/icons/classmates.svg" alt="odnoklassniky" class="footer__icon"></a>
+                        <a href="#"><img src="assets/img/icons/tiktok.svg" alt="tiktok" class="footer__icon"></a>
+                        <a href="#"><img src="assets/img/icons/pinterest.svg" alt="pinterest" class="footer__icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="modal modal--moscow">
+                <div class="modal__content">
+                    <p class="modal__agree">Город доставки</p>
+                    <p class="modal__city">Москва</p>
+                    <div class="modal__btns">
+                        <div class="btn btn-yes">Да, верно</div>
+                        <div class="btn btn--light btn-no">Нет, другой</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal--done">
+                <div class="modal__content">
+                    <p class="modal__agree">Условия доставки пересчитанны с учетом вашего региона доставки</p>
+                    <div class="modal__btns">
+                        <div class="btn">Понятно</div>
+                        <div class="btn btn--light">Подробнее</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__city">
+                        <img src="assets/img/icons/location.svg" alt="place">
+                        <span>Москва</span>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="#" class="menu__link">Для бизнеса</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Где купить</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Гарантия и возврат</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Карьера</a>
+                        </li>
+                        <ul class="menu menu__contacts">
+                            <li>
+                                <a href="#" class="menu__link menu__link--gray">пн-пт с 9 до 18 </a>
+                            </li>
+                            <li>
+                                <a href="tel:88007778549" class="menu__link">8 800 777 85 49</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__block">
+            <div class="container">
+                <div class="header__content">
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/icons/logo.svg" alt="Fitocosmetic">
+                    </a>
+                    <div class="header-catalog">
+                        <div class="catalog-content">
+                            <ul class="catalog-item">
+                                <li class="item-li item-li--active">
+                                    <span>Волосы</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Окрашивание</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Лицо</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Тело</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Макияж</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Уход за полостью рта</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Уход за домом</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Детская косметика</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Солнцезащитные средства</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Подарочные наборы</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Акции</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Бренды</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                            </ul>
+                            <ul class="catalog-item">
+                                <div class="item-dop item-dop--active">
+                                    <p class="title">Волосы</p>
+                                    <li class="item-li"><a href="catalog.html">Все товары категории</a></li>
+                                    <li class="item-li item-li--active"><a href="catalog.html">Шампуни</a></li>
+                                    <li class="item-li"><a href="catalog.html">Бальзамы </a></li>
+                                    <li class="item-li"><a href="catalog.html">Маски, масла</a></li>
+                                    <li class="item-li"><a href="catalog.html">Спреи</a></li>
+                                    <li class="item-li"><a href="catalog.html">Подарочные наборы</a></li>
+                                </div>
+                                <div class="item-dop">
+                                    <p class="title">Окрашивание</p>
+                                    <li class="item-li"><a href="catalog.html">Все товары категории</a></li>
+                                    <li class="item-li item-li--active"><a href="catalog.html">Шампуни</a></li>
+                                    <li class="item-li"><a href="catalog.html">Бальзамы </a></li>
+                                    <li class="item-li"><a href="catalog.html">Маски, масла</a></li>
+                                    <li class="item-li"><a href="catalog.html">Спреи</a></li>
+                                    <li class="item-li"><a href="catalog.html">Подарочные наборы</a></li>
+                                </div>
+                                <div class="item-dop">
+                                    <p class="title">Лицо</p>
+                                    <li class="item-li"><a href="catalog.html">Все товары категории</a></li>
+                                    <li class="item-li item-li--active"><a href="catalog.html">Шампуни</a></li>
+                                    <li class="item-li"><a href="catalog.html">Бальзамы </a></li>
+                                    <li class="item-li"><a href="catalog.html">Маски, масла</a></li>
+                                    <li class="item-li"><a href="catalog.html">Спреи</a></li>
+                                    <li class="item-li"><a href="catalog.html">Подарочные наборы</a></li>
+                                </div>
+                            </ul>
+                            <div class="catalog-item"><img src="assets/img/banners/sales-slide-3.jpg" alt="" class="catalog-banner"></div>
+                        </div>
+                        <div class="btn catalog__btn">
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icons/sprite.svg#menu"></use>
+                            </svg>
+                            <span>Каталог</span>
+                        </div>
+                        <div class="search header__search">
+                            <input type="search" placeholder="Поиск по каталогу">
+                            <img src="assets/img/icons/search.svg" alt="search" class="search__img">
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <svg class="icon">
+                            <use xlink:href="assets/img/icons/sprite.svg#box"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use xlink:href="assets/img/icons/sprite.svg#user"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use xlink:href="assets/img/icons/sprite.svg#bag"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="filters filters-all">
+        <div class="filters__title">
+            <img class="filters-back" src="assets/img/icons/arrow-back.svg" alt="<-">
+            <h3 class="title">Фильтры</h3>
+        </div>
+        <div class="filters__content">
+            <div class="filters__item filter--categories">
+                <div class="filter__category">
+                    <label for="category-all">Все товары категории</label>
+                    <input id="category-all" checked name="category" type="radio">
+                </div>
+                <div class="filter__category">
+                    <label for="category-shampoo">Шампуни</label>
+                    <input id="category-shampoo" name="category" type="radio">
+                </div>
+                <div class="filter__category">
+                    <label for="category-balzam">Бальзамы </label>
+                    <input id="category-balzam" name="category" type="radio">
+                </div>
+                <div class="filter__category">
+                    <label for="category-mask">Маски, масла</label>
+                    <input id="category-mask" name="category" type="radio">
+                </div>
+                <div class="filter__category">
+                    <label for="category-sprey">Спреи</label>
+                    <input id="category-sprey" name="category" type="radio">
+                </div>
+                <div class="filter__category">
+                    <label for="category-present">Подарочные наборы</label>
+                    <input id="category-present" name="category" type="radio">
+                </div>
+            </div>
+            <div class="filters__item filter--brand">
+                <div class="filter-brand__title">
+                    <h3>Бренд</h3>
+                    <div class="link link-brands"><span>Все</span><img src="assets/img/icons/arrow-green.svg" alt=">"></div>
+                </div>
+                <div class="filter-brand__items">
+                    <label for="brand-1" class="filter-brand__item">Fito Bomb</label>
+                    <label for="brand-2" class="filter-brand__item">Fito Superfood</label>
+                    <label for="brand-3" class="filter-brand__item">Organic Oil Professional</label>
+                    <label for="brand-4" class="filter-brand__item">Super Food</label>
+                    <label for="brand-5" class="filter-brand__item">Баня по-царски</label>
+                    <label for="brand-6" class="filter-brand__item">Десерты Красоты</label>
+                    <label for="brand-7" class="filter-brand__item">Народные Рецепты</label>
+                    <label for="brand-8" class="filter-brand__item">Премудрости Красоты</label>
+                    <label for="brand-9" class="filter-brand__item">Свежая Косметика</label>
+                    <label for="brand-10" class="filter-brand__item">Хна и Басма</label>
+                </div>
+            </div>
+            <div class="filters__item filter--brand">
+                <div class="filter-brand__title">
+                    <h3>Тип волос</h3>
+                    <div class="link link-type"><span>Все</span><img src="assets/img/icons/arrow-green.svg" alt=">"></div>
+                </div>
+                <div class="filter-brand__items">
+                    <label for="type-1" class="filter-brand__item">Для всех типов</label>
+                    <label for="type-2" class="filter-brand__item">Для жирных волос</label>
+                    <label for="type-3" class="filter-brand__item">Для ослабленных </label>
+                    <label for="type-4" class="filter-brand__item">Для окрашенных</label>
+                    <label for="type-5" class="filter-brand__item">Для сухих и поврежденых</label>
+                    <label for="type-6" class="filter-brand__item">Против перхоти</label>
+                </div>
+            </div>
+            <div class="btn">Показать&nbsp;<span>455</span>&nbsp;товаров</div>
+        </div>
+    </div>
+
+    <div class="filters filters-brands">
+        <div class="filters__title">
+            <img class="filters-back-1" src="assets/img/icons/arrow-back.svg" alt="<-">
+            <h3 class="title">Бренды</h3>
+        </div>
+        <div class="filters__content">
+            <div class="filters__item filter--categories">
+                <div class="filter__category">
+                    <label for="brand-1">Fito Bomb</label>
+                    <input id="brand-1" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="brand-2">Fito Superfood</label>
+                    <input id="brand-2" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="brand-3">Organic Oil Professional</label>
+                    <input id="brand-3" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="brand-4">Super Food</label>
+                    <input id="brand-4" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="brand-5">Баня по-царски</label>
+                    <input id="brand-5" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="brand-6">Десерты Красоты</label>
+                    <input id="brand-6" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="brand-7">Народные Рецепты</label>
+                    <input id="brand-7" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="brand-8">Премудрости Красоты</label>
+                    <input id="brand-8" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="brand-9">Свежая Косметика</label>
+                    <input id="brand-9" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="brand-10">Хна и Басма</label>
+                    <input id="brand-10" name="category" type="checkbox">
+                </div>
+            </div>
+            <div class="btn">Применить</div>
+        </div>
+    </div>
+    <div class="filters filters-type">
+        <div class="filters__title">
+            <img class="filters-back-1" src="assets/img/icons/arrow-back.svg" alt="<-">
+            <h3 class="title">Типы волос</h3>
+        </div>
+        <div class="filters__content">
+            <div class="filters__item filter--categories">
+                <div class="filter__category">
+                    <label for="type-1">Для всех типов</label>
+                    <input id="type-1" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="type-2">Для жирных волос</label>
+                    <input id="type-2" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="type-3">Для ослабленных </label>
+                    <input id="type-3" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="type-4">Для окрашенных</label>
+                    <input id="type-4" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="type-5">Для сухих и поврежденых</label>
+                    <input id="type-5" name="category" type="checkbox">
+                </div>
+                <div class="filter__category">
+                    <label for="type-6">Против перхоти</label>
+                    <input id="type-6" name="category" type="checkbox">
+                </div>
+            </div>
+            <div class="btn">Применить</div>
+        </div>
+    </div>
+    <div class="modal modal--sort">
+        <a href="#" class="modal__close"><img src="assets/img/icons/modal-close.svg" alt="x"></a>
+        <div class="modal__content">
+            <h2 class="modal__title">Сортировка</h2>
+            <div class="filters__item filter--categories">
+                <div class="filter__category">
+                    <label for="sort-all">Популярное</label>
+                    <input id="sort-all" checked name="category" type="radio">
+                </div>
+                <div class="filter__category">
+                    <label for="sort-new">Новинки</label>
+                    <input id="sort-new" name="category" type="radio">
+                </div>
+                <div class="filter__category">
+                    <label for="sort-balzam">Бальзамы </label>
+                    <input id="sort-balzam" name="category" type="radio">
+                </div>
+                <div class="filter__category">
+                    <label for="sort-min">Сначала дешевле</label>
+                    <input id="sort-min" name="category" type="radio">
+                </div>
+                <div class="filter__category">
+                    <label for="sort-max">Сначала дороже</label>
+                    <input id="sort-max" name="category" type="radio">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__content">
+                    <a href="#" class="link">Главная</a>
+                    <span>—</span>
+                    <a href="#" class="link">Волосы</a>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="container">
+                <h2 class="title">Волосы
+                    <span class="title__media catalog-info__num">320 товаров</span>
+                </h2>
+                <div class="catalog__content">
+                    <div class="catalog__filter filter">
+                        <div class="filter__categories">
+                            <span class="filter__category filter__category--active">Все товары категории</span>
+                            <span class="filter__category">Шампуни</span>
+                            <span class="filter__category">Бальзамы </span>
+                            <span class="filter__category">Маски, масла</span>
+                            <span class="filter__category">Спреи</span>
+                            <span class="filter__category">Подарочные наборы</span>
+                        </div>
+                        <div class="filter__brands">
+                            <h3 class="title--small title filter__title">
+                                <span>Бренд</span>
+                                <img src="assets/img/icons/arrow-down.svg" alt=">">
+                            </h3>
+                            <div class="filter__brand"><input class="input" data-name="Fito Bomb" type="checkbox" name="brand" id="brand-1"><label for="brand-1">Fito Bomb</label></div>
+                            <div class="filter__brand"><input class="input" data-name="Fito Superfood" type="checkbox" name="brand" id="brand-2"><label for="brand-2">Fito Superfood</label></div>
+                            <div class="filter__brand"><input class="input" data-name="Organic Oil Professional" type="checkbox" name="brand" id="brand-3"><label for="brand-3">Organic Oil Professional</label></div>
+                            <div class="filter__brand"><input class="input" data-name="Super Food" type="checkbox" name="brand" id="brand-4"><label for="brand-4">Super Food</label></div>
+                            <div class="filter__brand"><input class="input" data-name="Баня по-царски" type="checkbox" name="brand" id="brand-5"><label for="brand-5">Баня по-царски</label></div>
+                            <div class="filter__brand"><input class="input" data-name="Десерты Красоты" type="checkbox" name="brand" id="brand-6"><label for="brand-6">Десерты Красоты</label></div>
+                            <div class="filter__brand"><input class="input" data-name="Народные Рецепты" type="checkbox" name="brand" id="brand-7"><label for="brand-7">Народные Рецепты</label></div>
+                            <div class="filter__brand"><input class="input" data-name="Премудрости Красоты" type="checkbox" name="brand" id="brand-8"><label for="brand-8">Премудрости Красоты</label></div>
+                            <div class="filter__brand"><input class="input" data-name="Свежая Косметика" type="checkbox" name="brand" id="brand-9"><label for="brand-9">Свежая Косметика</label></div>
+                            <div class="filter__brand"><input class="input" data-name="Хна и Басма" type="checkbox" name="brand" id="brand-10"><label for="brand-10">Хна и Басма</label></div>
+                            <div class="filter__brands filter__brands--disable">
+                                <div class="filter__brand"><input class="input" data-name="Fito Bomb" type="checkbox" name="brand" id="brand-11"><label for="brand-11">Fito Bomb</label></div>
+                                <div class="filter__brand"><input class="input" data-name="Fito Superfood" type="checkbox" name="brand" id="brand-12"><label for="brand-12">Fito Superfood</label></div>
+                                <div class="filter__brand"><input class="input" data-name="Organic Oil Professional" type="checkbox" name="brand" id="brand-13"><label for="brand-13">Organic Oil Professional</label></div>
+                                <div class="filter__brand"><input class="input" data-name="Super Food" type="checkbox" name="brand" id="brand-14"><label for="brand-14">Super Food</label></div>
+                                <div class="filter__brand"><input class="input" data-name="Баня по-царски" type="checkbox" name="brand" id="brand-15"><label for="brand-15">Баня по-царски</label></div>
+                                <div class="filter__brand"><input class="input" data-name="Десерты Красоты" type="checkbox" name="brand" id="brand-16"><label for="brand-16">Десерты Красоты</label></div>
+                                <div class="filter__brand"><input class="input" data-name="Народные Рецепты" type="checkbox" name="brand" id="brand-17"><label for="brand-17">Народные Рецепты</label></div>
+                                <div class="filter__brand"><input class="input" data-name="Премудрости Красоты" type="checkbox" name="brand" id="brand-18"><label for="brand-18">Премудрости Красоты</label></div>
+                                <div class="filter__brand"><input class="input" data-name="Свежая Косметика" type="checkbox" name="brand" id="brand-19"><label for="brand-19">Свежая Косметика</label></div>
+                            </div>
+                            <a href="#" class="link brands__link">Показать все</a>
+                        </div>
+                    </div>
+                    <div class="catalog__items">
+                        <img class="catalog__banner" src="assets/img/banners/sales-banner.jpg" alt="banner">
+                        <div class="catalog__info catalog-info">
+                            <div class="catalog-info__count">
+                                <span class="catalog-info__num">320</span>
+                                <span>товаров</span>
+                            </div>
+                            <div class="catalog-info__filters">
+                                <span class="catalog-info__filter catalog-info__filter--active">Популярные</span>
+                                <span class="catalog-info__filter">Новинки</span>
+                                <div class="catalog-info__filter">
+                                    <span>По стоимости</span>
+                                    <img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__media">
+                            <div class="media__sort media__item">
+                                <div class="media__title">
+                                    <img src="assets/img/icons/sort.svg" alt="сортировка"><span>Популярные</span>
+                                </div>
+                            </div>
+                            <div class="media__filters media__item">
+                                <div class="media__title">
+                                    <img src="assets/img/icons/filter.svg" alt="фильтр"><span>Фильтры</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__block"></div>
+                        <div class="catalog__cards">
+                            <a href="#" class="card">
+                                <div class="card__tags">
+                                    <div class="tag tag--blue">Новинка</div>
+                                    <div class="tag tag--orange">Акция</div>
+                                </div>
+                                <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                <div class="slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__title">Премудрости Красоты</p>
+                                    <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card__tags">
+                                    <div class="tag tag--blue">Новинка</div>
+                                    <div class="tag tag--orange">Акция</div>
+                                </div>
+                                <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                <div class="slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__title">Премудрости Красоты</p>
+                                    <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card__tags">
+                                    <div class="tag tag--blue">Новинка</div>
+                                    <div class="tag tag--orange">Акция</div>
+                                </div>
+                                <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                <div class="slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__title">Премудрости Красоты</p>
+                                    <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card__tags">
+                                    <div class="tag tag--blue">Новинка</div>
+                                    <div class="tag tag--orange">Акция</div>
+                                </div>
+                                <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                <div class="slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__title">Премудрости Красоты</p>
+                                    <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="btn btn--default btn--more">Показать еще</div>
+                        <div class="catalog__pages">
+                            <div class="btn btn--active page">1</div>
+                            <div class="btn btn--default page">2</div>
+                            <div class="btn btn--default page">3</div>
+                            <div class="btn btn--default page">4</div>
+                            <div class="btn btn--default page">5</div>
+                            <div class="btn btn--default page">...</div>
+                            <div class="btn btn--default page">67</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <img src="assets/img/icons/big-logo.svg" alt="fitocosmetic" class="footer__logo">
+                <div class="footer__content">
+                    <div class="footer__menu">
+                        <div class="footer__items">
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="link footer__link footer__link--active">
+                                        О компании 
+                                        <svg class="icon footer__media">
+                                            <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">О нас</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Блог</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Наши бренды</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Вакансии</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__items">
+                            <ul class="footer__links">
+                                <li><a href="#" class="link footer__link footer__link--active">Покупателям 
+                                    <svg class="icon footer__media">
+                                        <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                    </svg></a></li>
+                                <li><a href="#" class="link footer__link">Оплата и доставка</a></li>
+                                <li><a href="#" class="link footer__link">Гарантия и возврат</a></li>
+                                <li><a href="#" class="link footer__link">Сроки доставки</a></li>
+                                <li><a href="#" class="link footer__link">Сертификаты на продукцию</a></li>
+                                <li><a href="#" class="link footer__link">Где купить</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__items">
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="link footer__link footer__link--active">Бизнесу 
+                                        <svg class="icon footer__media">
+                                            <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                        </svg></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Контрактное производство</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Оптовые закупки</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__items">
+                            <div class="subscribe">
+                                <span class="footer__link--active">Подписка на рассылку</span>
+                                <div class="subscribe__form">
+                                    <input type="email" placeholder="Введите e-mail">
+                                    <img src="assets/img/icons/next.svg" alt="->">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <a href="tel:88007778549" class="footer__phone">8 800 777 85 49</a>
+                        <p class="footer__time">с 09:00 до 18:00 пн-пт</p>
+                        <p class="footer__address">117420, Москва, ул. Намёткина, 12а</p>
+                        <div class="footer__social">
+                            <a href="#"><img src="assets/img/icons/telegram.svg" alt="telegramm" class="footer__icon"></a>
+                            <a href="#"><img src="assets/img/icons/vk.svg" alt="vkontakte" class="footer__icon"></a>
+                            <a href="#"><img src="assets/img/icons/classmates.svg" alt="odnoklassniky" class="footer__icon"></a>
+                            <a href="#"><img src="assets/img/icons/tiktok.svg" alt="tiktok" class="footer__icon"></a>
+                            <a href="#"><img src="assets/img/icons/pinterest.svg" alt="pinterest" class="footer__icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <p class="footer__about">© 2024, ООО «Фитокосметик»</p>
+                    <a href="#" class="footer__doc link footer__link">Публичная оферта</a>
+                    <a href="#" class="footer__doc link footer__link">Политика конфидециальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/filter.js"></script>
+</body>
+
+</html>

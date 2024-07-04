@@ -1,0 +1,135 @@
+footer
+    background-color: $gray06   
+    padding: 64px 0 48px
+    margin-top: 30px
+.footer    
+    &__logo
+        margin-bottom: 64px
+    &__content
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        flex-wrap: wrap
+    &__menu
+        display: flex
+        align-items: flex-start
+        justify-content: flex-start
+        margin-bottom: 64px
+    &__links
+        margin-right: 81px
+    &__info
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        margin-top: 40px
+    &__links li
+        margin-bottom: 16px
+    &__link
+        font-size: 17px
+        line-height: 20px
+        color: $gray01
+        &:hover
+            color: $black
+        &--active
+            color: $black
+            font-weight: 600
+    &__phone
+        font-size: 28px
+        font-weight: 600
+        line-height: 36px
+        margin-bottom: 8px
+        color: $gray01
+        transition:  all .3s
+        &:hover
+            color: $green
+    &__time
+        font-size: 17px
+        line-height: 20px
+        margin-bottom: 16px
+        color: $gray02
+    &__address
+        font-size: 17px
+        line-height: 20px
+        margin-bottom: 16px
+        margin-top: 16px
+        color: $gray01
+    &__icons
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__doc
+        margin-left: 32px
+    &__mail
+        display: block
+        margin-bottom: 40px
+        transition: all .3s
+        &:hover
+            color: $green
+    &__media
+        display: none
+.subscribe
+    margin-top: 24px
+    &__form
+        position: relative
+        cursor: pointer
+        margin-top: 12px
+        input
+            background: none
+            padding: 14px 0
+            border-bottom: 1px solid rgba(36, 43, 69, 0.2)
+            width: 100%
+            &::placeholder
+                font-size: 17px
+                line-height: 20px
+                color: $gray02
+        img
+            position: absolute
+            top: 0
+            bottom: 0
+            right: 0
+            margin: auto
+
+@media screen and ( max-width: 840px )
+    .footer__links
+        margin-right: 40px
+@media screen and ( max-width: 700px )
+    .footer
+        &__menu
+            flex-direction: column
+            flex-basis: 100%
+        &__items
+            padding-top: 24px
+            border-bottom: 1px solid $gray03
+            width: 100%
+            max-width: 100%
+        &__media
+            display: block
+            fill: $gray01
+            width: 16px
+            height: 16px
+        &__links
+            margin-right: 0
+        &__link
+            display: none
+            &--active
+                display: flex
+                align-items: center
+                justify-content: space-between
+        &__links--active
+            .footer__link
+                display: flex
+        &__info
+            flex-direction: column
+            align-items: flex-start
+        &__doc
+            margin-left: 0
+            margin-top: 20px
+        &__contacts
+            text-align: center
+            margin: auto
+            width: 80%
+        &__social
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: space-around

@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Карточка продукта</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__media">
+            <div class="container">
+                <img src="assets/img/icons/menu-media.svg" alt="menu">
+                <img src="assets/img/icons/logo-media.svg" alt="logo">
+                <img src="assets/img/icons/search.svg" alt="поиск">
+            </div>
+            <div class="header__media-bottom media-bottom">
+                <div class="container">
+                    <div class="media-bottom__items">
+                        <a href="index.html" class="media-bottom__item media-bottom__item--active">
+                            <img src="assets/img/icons/home.svg" alt=""><span>Главная</span>
+                        </a>
+                        <a href="catalog.html" class="media-bottom__item">
+                            <img src="assets/img/icons/catalog.svg" alt=""><span>Каталог</span>
+                        </a>
+                        <a href="basket.html" class="media-bottom__item">
+                            <img src="assets/img/icons/heart.svg" alt=""><span>Избранное</span>
+                        </a>
+                        <a href="basket.html" class="media-bottom__item">
+                            <img src="assets/img/icons/bag.svg" alt=""><span>Корзина</span>
+                        </a>
+                        <a href="index.html" class="media-bottom__item">
+                            <img src="assets/img/icons/user.svg" alt=""><span>Профиль</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu__media">
+            <div class="header__city">
+                <img src="assets/img/icons/location.svg" alt="place">
+                <span>Москва</span>
+            </div>
+            <div class="menu__media-items">
+                <a href="catalog.html">Каталог</a>
+                <a href="#">Акции</a>
+                <a href="catalog-brands.html">Бренды</a>
+                <span></span>
+                <a href="#">О нас</a>
+                <a href="#">Оплата и доставка</a>
+                <a href="#">Гарантия и возврат</a>
+                <a href="#">Сроки доставки</a>
+                <a href="#">Карьера</a>
+                <span></span>
+            </div>
+            <div class="menu__media-info">
+                <div class="footer__contacts">
+                    <a href="tel:88007778549" class="footer__phone">8 800 777 85 49</a>
+                    <p class="footer__time">с 09:00 до 18:00 пн-пт</p>
+                    <p class="footer__address">117420, Москва, ул. Намёткина, 12а</p>
+                    <div class="footer__social">
+                        <a href="#"><img src="assets/img/icons/telegram.svg" alt="telegramm" class="footer__icon"></a>
+                        <a href="#"><img src="assets/img/icons/vk.svg" alt="vkontakte" class="footer__icon"></a>
+                        <a href="#"><img src="assets/img/icons/classmates.svg" alt="odnoklassniky" class="footer__icon"></a>
+                        <a href="#"><img src="assets/img/icons/tiktok.svg" alt="tiktok" class="footer__icon"></a>
+                        <a href="#"><img src="assets/img/icons/pinterest.svg" alt="pinterest" class="footer__icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="modal modal--moscow">
+                <div class="modal__content">
+                    <p class="modal__agree">Город доставки</p>
+                    <p class="modal__city">Москва</p>
+                    <div class="modal__btns">
+                        <div class="btn btn-yes">Да, верно</div>
+                        <div class="btn btn--light btn-no">Нет, другой</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal--done">
+                <div class="modal__content">
+                    <p class="modal__agree">Условия доставки пересчитанны с учетом вашего региона доставки</p>
+                    <div class="modal__btns">
+                        <div class="btn">Понятно</div>
+                        <div class="btn btn--light">Подробнее</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__city">
+                        <img src="assets/img/icons/location.svg" alt="place">
+                        <span>Москва</span>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="#" class="menu__link">Для бизнеса</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Где купить</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Гарантия и возврат</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Карьера</a>
+                        </li>
+                        <ul class="menu menu__contacts">
+                            <li>
+                                <a href="#" class="menu__link menu__link--gray">пн-пт с 9 до 18 </a>
+                            </li>
+                            <li>
+                                <a href="tel:88007778549" class="menu__link">8 800 777 85 49</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__block">
+            <div class="container">
+                <div class="header__content">
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/icons/logo.svg" alt="Fitocosmetic">
+                    </a>
+                    <div class="header-catalog">
+                        <div class="catalog-content">
+                            <ul class="catalog-item">
+                                <li class="item-li item-li--active">
+                                    <span>Волосы</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Окрашивание</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Лицо</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Тело</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Макияж</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Уход за полостью рта</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Уход за домом</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Детская косметика</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Солнцезащитные средства</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Подарочные наборы</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Акции</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Бренды</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                            </ul>
+                            <ul class="catalog-item">
+                                <div class="item-dop item-dop--active">
+                                    <p class="title">Волосы</p>
+                                    <li class="item-li"><a href="catalog.html">Все товары категории</a></li>
+                                    <li class="item-li item-li--active"><a href="catalog.html">Шампуни</a></li>
+                                    <li class="item-li"><a href="catalog.html">Бальзамы </a></li>
+                                    <li class="item-li"><a href="catalog.html">Маски, масла</a></li>
+                                    <li class="item-li"><a href="catalog.html">Спреи</a></li>
+                                    <li class="item-li"><a href="catalog.html">Подарочные наборы</a></li>
+                                </div>
+                                <div class="item-dop">
+                                    <p class="title">Окрашивание</p>
+                                    <li class="item-li"><a href="catalog.html">Все товары категории</a></li>
+                                    <li class="item-li item-li--active"><a href="catalog.html">Шампуни</a></li>
+                                    <li class="item-li"><a href="catalog.html">Бальзамы </a></li>
+                                    <li class="item-li"><a href="catalog.html">Маски, масла</a></li>
+                                    <li class="item-li"><a href="catalog.html">Спреи</a></li>
+                                    <li class="item-li"><a href="catalog.html">Подарочные наборы</a></li>
+                                </div>
+                                <div class="item-dop">
+                                    <p class="title">Лицо</p>
+                                    <li class="item-li"><a href="catalog.html">Все товары категории</a></li>
+                                    <li class="item-li item-li--active"><a href="catalog.html">Шампуни</a></li>
+                                    <li class="item-li"><a href="catalog.html">Бальзамы </a></li>
+                                    <li class="item-li"><a href="catalog.html">Маски, масла</a></li>
+                                    <li class="item-li"><a href="catalog.html">Спреи</a></li>
+                                    <li class="item-li"><a href="catalog.html">Подарочные наборы</a></li>
+                                </div>
+                            </ul>
+                            <div class="catalog-item"><img src="assets/img/banners/sales-slide-3.jpg" alt="" class="catalog-banner"></div>
+                        </div>
+                        <div class="btn catalog__btn">
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icons/sprite.svg#menu"></use>
+                            </svg>
+                            <span>Каталог</span>
+                        </div>
+                        <div class="search header__search">
+                            <input type="search" placeholder="Поиск по каталогу">
+                            <img src="assets/img/icons/search.svg" alt="search" class="search__img">
+                            <div class="search__content">
+                                <a href="catalog.html" class="search__text">Шампунь</a>
+                                <a href="catalog.html" class="search__text">Восстанавливающий шампунь</a>
+                                <a href="catalog.html" class="search__text">Шампунь для объема</a>
+                                <a href="catalog.html" class="search__text">Профессиональный шампунь</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <a class="icons__link" href="#">
+                            <span class="num box__num">7</span>
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icons/sprite.svg#box"></use>
+                            </svg>
+                        </a>
+                        <a class="icons__link" href="#">
+                            <span class="num heart__num">18</span>
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <a class="icons__link" href="personal.html">
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icons/sprite.svg#user"></use>
+                            </svg>
+                        </a>
+                        <a class="icons__link" href="basket.html">
+                            <span class="num basket__num">6</span>
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icons/sprite.svg#bag"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__content">
+                    <a href="#" class="link">Главная</a>
+                    <span>—</span>
+                    <a href="#" class="link">Волосы</a>
+                    <span>—</span>
+                    <a href="#" class="link">Шампуни</a>
+                    <span>—</span>
+                    <a href="#" class="link">Натуральный репейный шампунь Укрепление и рост </a>
+                </div>
+            </div>
+        </section>
+        <section class="product-card">
+            <div class="container container-2">
+                <div class="product-card__content">
+                    <div class="product-card__left">
+                        <div class="product-card__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/img/products/img_product.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/img/products/img_product.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/img/products/img_product.png" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/img/products/img_product.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination-1">
+                            <img class="swiper_pagination_img swiper_pagination_img--active" src="assets/img/products/img_product.png" alt="">
+                            <img class="swiper_pagination_img" src="assets/img/products/img_product.png" alt="">
+                            <img class="swiper_pagination_img" src="assets/img/products/img_product.png" alt="">
+                            <img class="swiper_pagination_img" src="assets/img/products/img_product.png" alt="">
+                        </div>
+                    </div>
+                    <div class="product-card__right">
+                        <p class="product-card__brand">Сolor Intense</p>
+                        <p class="product-card__title">Стойкая крем-краска для волос, 6.5 Красное дерево</p>
+                        <div class="product-card__rewievs">
+                            <div class="product-card__stars">
+                                <img src="assets/img/icons/star.svg" alt="звезда">
+                                <img src="assets/img/icons/star.svg" alt="звезда">
+                                <img src="assets/img/icons/star.svg" alt="звезда">
+                                <img src="assets/img/icons/star.svg" alt="звезда">
+                                <img src="assets/img/icons/star.svg" alt="звезда">
+                            </div>
+                            <span class="product-card__count">4,8</span>
+                            <span class="product-card__count-text">24 отзыва</span>
+                        </div>
+                        <div class="product-card__more">
+                            <a href="product-card.html" class="more__link more__link--active"><img src="assets/img/products/01.png" alt=""></a>
+                            <a href="product-card.html" class="more__link"><img src="assets/img/products/01.png" alt=""></a>
+                        </div>
+                        <div class="product-card__colors">
+                            <p class="product-card__name-color">№ 6.5 Красное дерево</p>
+                            <div class="product-card__colors-items">
+                                <div data-name="№ 6.5 Красное дерево" class="product-card__color product-card__color--active"><img src="assets/img/colors/img_color.png" alt=""></div>
+                                <div data-name="№ 4.38 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-1.png" alt=""></div>
+                                <div data-name="№ 4.39 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-2.png" alt=""></div>
+                                <div data-name="№ 4.40 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-3.png" alt=""></div>
+                                <div data-name="№ 4.41 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-4.png" alt=""></div>
+                                <div data-name="№ 4.42 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-5.png" alt=""></div>
+                                <div data-name="№ 4.43 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-6.png" alt=""></div>
+                                <div data-name="№ 4.44 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-7.png" alt=""></div>
+                                <div data-name="№ 4.45 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-8.png" alt=""></div>
+                                <div data-name="№ 4.46 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-9.png" alt=""></div>
+                                <div data-name="№ 4.47 Шоколадный каштан" class="product-card__color"><img src="assets/img/colors/img_color-10.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="markets">
+                            <a href="https://www.ozon.ru/seller/ooo-fitokosmetik-208373/products/?miniapp=seller_208373" class="market market--ozon"><img src="assets/img/icons/logo_ozon.svg" alt=""></a>
+                            <a href="https://www.wildberries.ru/brands/fito-cosmetic" class="market market--wb"><img src="assets/img/icons/logo_wildberris.svg" alt=""></a>
+                        </div>
+                        <div class="product-card__info">
+                            <div class="info">
+                                <div class="info__top">
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btns">
+                                            <div class="btn btn--basket btn--product">
+                                                <p>Добавить в корзину</p>
+                                                <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                            </div>
+                                            <a href="basket.html" class="btn btn--link-basket">
+                                                <p>Перейти в корзину</p>
+                                                <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                            </a>
+                                            <div class="btn btn--light">
+                                                <svg class="icon item__icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="info__text">Ближайшая доставка по <span class="green"> Москве</span> 10 февраля, курьером от 250 ₽, до пункта выдачи заказа бесплатно</p>
+                                    <p class="info__text green">Бесплатная доставка при заказе от 2500₽</p>
+                                </div>
+                                <div class="info__bottom">
+                                    <p class="info__text bold">Товар участвует в акции</p>
+                                    <p class="info__text">Купите любое средство серии Премудрости красоты и получите второе такое же в подарок! Подробнее</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card__advantages">
+                            <div class="product-card__advant">
+                                <img src="assets/img/products/default.png" alt="">
+                                <p>100% гарантия качества</p>
+                            </div>
+                            <div class="product-card__advant">
+                                <img src="assets/img/products/default.png" alt="">
+                                <p>Оплата товара любым удобным способом!</p>
+                            </div>
+                            <div class="product-card__advant">
+                                <img src="assets/img/products/default.png" alt="">
+                                <p>Доставка по всей России</p>
+                            </div>
+                        </div>
+                        <div class="product-card__characteristics">
+                            <div class="characteristic">
+                                <p>Артикул</p>
+                                <span class="dotted"></span>
+                                <p>6225</p>
+                            </div>
+                            <div class="characteristic">
+                                <p>Бренд</p>
+                                <span class="dotted"></span>
+                                <p>Премудрости красоты</p>
+                            </div>
+                            <div class="characteristic">
+                                <p>Объем</p>
+                                <span class="dotted"></span>
+                                <p>370 мл</p>
+                            </div>
+                            <div class="characteristic">
+                                <p>Тип продукта</p>
+                                <span class="dotted"></span>
+                                <p>Шампунь</p>
+                            </div>
+                            <div class="characteristic">
+                                <p>Эффект</p>
+                                <span class="dotted"></span>
+                                <p>Восстановление, борьба с перхотью</p>
+                            </div>
+                            <div class="characteristic">
+                                <p>Тип волос</p>
+                                <span class="dotted"></span>
+                                <p>для окрашенных волос</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card__data product-card__data--active">
+                    <div class="data__title product-card__title">
+                        <h3>Описание</h3>
+                        <svg class="icon">
+                            <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                        </svg>
+                    </div>
+                    <p class="data__text">Укрепляет волосы, усиливает рост и предотвращает выпадение. Сила природы и натуральных экстрактов пробуждает волосы и наполняет энергией. Репейное масло содержит природные вещества, которые воздействуют на корни и кожу головы, ускоряет
+                        микроциркуляцию и усиливает рост волос. Витамин Е делает волосы более сильными и плотными. Омега 3 предотвращает ломкость волос и глубоко питает, пантенол восстанавливает и увлажняет. Экстракт ромашки успокаивает кожу головы и придает
+                        волосам блеск.</p>
+                </div>
+                <div class="product-card__data">
+                    <div class="data__title product-card__title">
+                        <h3>Состав</h3>
+                        <svg class="icon">
+                            <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                        </svg>
+                    </div>
+                    <p class="data__text">Укрепляет волосы, усиливает рост и предотвращает выпадение. Сила природы и натуральных экстрактов пробуждает волосы и наполняет энергией. Репейное масло содержит природные вещества, которые воздействуют на корни и кожу головы, ускоряет
+                        микроциркуляцию и усиливает рост волос. Витамин Е делает волосы более сильными и плотными. Омега 3 предотвращает ломкость волос и глубоко питает, пантенол восстанавливает и увлажняет. Экстракт ромашки успокаивает кожу головы и придает
+                        волосам блеск.</p>
+                </div>
+                <div class="product-card__data">
+                    <div class="data__title product-card__title">
+                        <h3>Способ применения</h3>
+                        <svg class="icon">
+                            <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                        </svg>
+                    </div>
+                    <p class="data__text">Укрепляет волосы, усиливает рост и предотвращает выпадение. Сила природы и натуральных экстрактов пробуждает волосы и наполняет энергией. Репейное масло содержит природные вещества, которые воздействуют на корни и кожу головы, ускоряет
+                        микроциркуляцию и усиливает рост волос. Витамин Е делает волосы более сильными и плотными. Омега 3 предотвращает ломкость волос и глубоко питает, пантенол восстанавливает и увлажняет. Экстракт ромашки успокаивает кожу головы и придает
+                        волосам блеск.</p>
+                </div>
+                <div class="product-card__data">
+                    <div class="data__title product-card__title">
+                        <h3>Особые указания</h3>
+                        <svg class="icon">
+                            <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                        </svg>
+                    </div>
+                    <p class="data__text">Укрепляет волосы, усиливает рост и предотвращает выпадение. Сила природы и натуральных экстрактов пробуждает волосы и наполняет энергией. Репейное масло содержит природные вещества, которые воздействуют на корни и кожу головы, ускоряет
+                        микроциркуляцию и усиливает рост волос. Витамин Е делает волосы более сильными и плотными. Омега 3 предотвращает ломкость волос и глубоко питает, пантенол восстанавливает и увлажняет. Экстракт ромашки успокаивает кожу головы и придает
+                        волосам блеск.</p>
+                </div>
+
+                <div class="data__rewievs rewievs">
+                    <div class="rewievs__top">
+                        <div class="rewievs__count">
+                            <h2 class="title rewievs__title title--small">Отзывы</h2>
+                            <div class="rewievs__bottom">
+                                <div class="rewievs__more">
+                                    <p class="rewievs__num">4,8</p>
+                                    <div class="rewievs__stars stars product-card__stars">
+                                        <img src="assets/img/icons/star.svg" alt="">
+                                        <img src="assets/img/icons/star.svg" alt="">
+                                        <img src="assets/img/icons/star.svg" alt="">
+                                        <img src="assets/img/icons/star.svg" alt="">
+                                        <img src="assets/img/icons/star.svg" alt="">
+                                    </div>
+                                    <p class="rewievs__count--text">204 отзыва</p>
+                                </div>
+                                <div class="btn">Оставить отзыв</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rewievs__table rewievs-table">
+                        <div class="rewievs-table__item">
+                            <div class="rewievs-table__person">
+                                <p class="rewievs-table__name">Марина</p>
+                                <p class="rewievs-table__date">23.04.23</p>
+                            </div>
+                            <div class="rewievs-table__rewiev">
+                                <div class="rewievs-table__stars product-card__stars">
+                                    <img src="assets/img/icons/star.svg" alt="">
+                                    <img src="assets/img/icons/star.svg" alt="">
+                                    <img src="assets/img/icons/star.svg" alt="">
+                                    <img src="assets/img/icons/star.svg" alt="">
+                                    <img src="assets/img/icons/star-half.svg" alt="">
+                                </div>
+                                <div class="rewievs-table__text hide">
+                                    Купила такую краску в магазине, долго она лежала и ждала своего часа. Тут решила покрасить брови и ресницы. Легко и просто оказалось, очень хорошо получилось. Решила купить ещё. Все пришло целое, хорошо упаковано и с хорошими сроками годности. Спасибо
+                                    большое 🤩
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rewievs-table__item">
+                            <div class="rewievs-table__person">
+                                <p class="rewievs-table__name">Василина</p>
+                                <p class="rewievs-table__date">23.04.23</p>
+                            </div>
+                            <div class="rewievs-table__rewiev">
+                                <div class="rewievs-table__stars product-card__stars">
+                                    <img src="assets/img/icons/star.svg" alt="">
+                                    <img src="assets/img/icons/star.svg" alt="">
+                                    <img src="assets/img/icons/star.svg" alt="">
+                                    <img src="assets/img/icons/star.svg" alt="">
+                                    <img src="assets/img/icons/star-half.svg" alt="">
+                                </div>
+                                <div class="rewievs-table__text hide">Спасибо большое за краску это самая лучшая краска для бровей несмотря на свою маленькую цену красит лучше всех дорогих красок, а я их перепробывала немало. Лучше этой краски нет супер красит и долго не смывается.Уже много
+                                    лет только ей пользуюсь,краска супер.Большое спасибо.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rewievs-table__item">
+                            <div class="rewievs-table__person">
+                                <p class="rewievs-table__name">Светлана</p>
+                                <p class="rewievs-table__date">23.04.23</p>
+                            </div>
+                            <div class="rewievs-table__rewiev">
+                                <div class="rewievs-table__stars product-card__stars">
+                                    <img src="assets/img/icons/star.svg" alt="">
+                                    <img src="assets/img/icons/star.svg" alt="">
+                                    <img src="assets/img/icons/star.svg" alt="">
+                                    <img src="assets/img/icons/star.svg" alt="">
+                                    <img src="assets/img/icons/star-half.svg" alt="">
+                                </div>
+                                <div class="rewievs-table__text hide">Хорошая краска. Мягкая консистенция, легко наносится кистью. Можно дольше 15 мин подержать.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn btn--default rewievs__btn">Показать еще</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular hit product-card__hit">
+            <div class="container">
+                <div class="popular__content hit__content">
+                    <h2 class="main__title popular__title">
+                        <span>С этим товаром часто покупают</span>
+                    </h2>
+                    <div class="popular__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="card">
+                                    <div class="card__tags">
+                                        <div class="tag tag--blue">Новинка</div>
+                                        <div class="tag tag--orange">Акция</div>
+                                    </div>
+                                    <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="card__info">
+                                        <p class="card__title">Премудрости Красоты</p>
+                                        <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn btn--basket">
+                                            <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom--active">
+                                        <p class="price__num">890 ₽</p>
+                                        <div class="card__bottom">
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="center btn btn--default">
+                                                <span>1</span><span>&nbsp;шт</span>
+                                            </div>
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="card">
+                                    <div class="card__tags">
+                                        <div class="tag tag--blue">Новинка</div>
+                                        <div class="tag tag--orange">Акция</div>
+                                    </div>
+                                    <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="card__info">
+                                        <p class="card__title">Премудрости Красоты</p>
+                                        <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn btn--basket">
+                                            <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom--active">
+                                        <p class="price__num">890 ₽</p>
+                                        <div class="card__bottom">
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="center btn btn--default">
+                                                <span>1</span><span>&nbsp;шт</span>
+                                            </div>
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="card">
+                                    <div class="card__tags">
+                                        <div class="tag tag--blue">Новинка</div>
+                                        <div class="tag tag--orange">Акция</div>
+                                    </div>
+                                    <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="card__info">
+                                        <p class="card__title">Премудрости Красоты</p>
+                                        <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn btn--basket">
+                                            <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom--active">
+                                        <p class="price__num">890 ₽</p>
+                                        <div class="card__bottom">
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="center btn btn--default">
+                                                <span>1</span><span>&nbsp;шт</span>
+                                            </div>
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="card">
+                                    <div class="card__tags">
+                                        <div class="tag tag--blue">Новинка</div>
+                                        <div class="tag tag--orange">Акция</div>
+                                    </div>
+                                    <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="card__info">
+                                        <p class="card__title">Премудрости Красоты</p>
+                                        <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn btn--basket">
+                                            <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom--active">
+                                        <p class="price__num">890 ₽</p>
+                                        <div class="card__bottom">
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="center btn btn--default">
+                                                <span>1</span><span>&nbsp;шт</span>
+                                            </div>
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="card">
+                                    <div class="card__tags">
+                                        <div class="tag tag--blue">Новинка</div>
+                                        <div class="tag tag--orange">Акция</div>
+                                    </div>
+                                    <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="card__info">
+                                        <p class="card__title">Премудрости Красоты</p>
+                                        <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn btn--basket">
+                                            <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom--active">
+                                        <p class="price__num">890 ₽</p>
+                                        <div class="card__bottom">
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="center btn btn--default">
+                                                <span>1</span><span>&nbsp;шт</span>
+                                            </div>
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="card">
+                                    <div class="card__tags">
+                                        <div class="tag tag--blue">Новинка</div>
+                                        <div class="tag tag--orange">Акция</div>
+                                    </div>
+                                    <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="card__info">
+                                        <p class="card__title">Премудрости Красоты</p>
+                                        <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn btn--basket">
+                                            <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom--active">
+                                        <p class="price__num">890 ₽</p>
+                                        <div class="card__bottom">
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="center btn btn--default">
+                                                <span>1</span><span>&nbsp;шт</span>
+                                            </div>
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-prev1"></div>
+                    <div class="swiper-button-next swiper-button-next1"></div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="popular hit product-card__hit">
+            <div class="container">
+                <div class="popular__content hit__content">
+                    <h2 class="main__title popular__title">
+                        <span>Вы просматривали</span>
+                    </h2>
+                    <div class="popular__slider popular__slider-1 swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="card">
+                                    <div class="card__tags">
+                                        <div class="tag tag--blue">Новинка</div>
+                                        <div class="tag tag--orange">Акция</div>
+                                    </div>
+                                    <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="card__info">
+                                        <p class="card__title">Премудрости Красоты</p>
+                                        <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn btn--basket">
+                                            <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom--active">
+                                        <p class="price__num">890 ₽</p>
+                                        <div class="card__bottom">
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="center btn btn--default">
+                                                <span>1</span><span>&nbsp;шт</span>
+                                            </div>
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="card">
+                                    <div class="card__tags">
+                                        <div class="tag tag--blue">Новинка</div>
+                                        <div class="tag tag--orange">Акция</div>
+                                    </div>
+                                    <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="card__info">
+                                        <p class="card__title">Премудрости Красоты</p>
+                                        <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn btn--basket">
+                                            <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom--active">
+                                        <p class="price__num">890 ₽</p>
+                                        <div class="card__bottom">
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="center btn btn--default">
+                                                <span>1</span><span>&nbsp;шт</span>
+                                            </div>
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="card">
+                                    <div class="card__tags">
+                                        <div class="tag tag--blue">Новинка</div>
+                                        <div class="tag tag--orange">Акция</div>
+                                    </div>
+                                    <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="card__info">
+                                        <p class="card__title">Премудрости Красоты</p>
+                                        <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn btn--basket">
+                                            <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom--active">
+                                        <p class="price__num">890 ₽</p>
+                                        <div class="card__bottom">
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="center btn btn--default">
+                                                <span>1</span><span>&nbsp;шт</span>
+                                            </div>
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="card">
+                                    <div class="card__tags">
+                                        <div class="tag tag--blue">Новинка</div>
+                                        <div class="tag tag--orange">Акция</div>
+                                    </div>
+                                    <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="card__info">
+                                        <p class="card__title">Премудрости Красоты</p>
+                                        <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn btn--basket">
+                                            <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom--active">
+                                        <p class="price__num">890 ₽</p>
+                                        <div class="card__bottom">
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="center btn btn--default">
+                                                <span>1</span><span>&nbsp;шт</span>
+                                            </div>
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="card">
+                                    <div class="card__tags">
+                                        <div class="tag tag--blue">Новинка</div>
+                                        <div class="tag tag--orange">Акция</div>
+                                    </div>
+                                    <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="card__info">
+                                        <p class="card__title">Премудрости Красоты</p>
+                                        <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn btn--basket">
+                                            <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom--active">
+                                        <p class="price__num">890 ₽</p>
+                                        <div class="card__bottom">
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="center btn btn--default">
+                                                <span>1</span><span>&nbsp;шт</span>
+                                            </div>
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="card">
+                                    <div class="card__tags">
+                                        <div class="tag tag--blue">Новинка</div>
+                                        <div class="tag tag--orange">Акция</div>
+                                    </div>
+                                    <svg class="icon card__icon">
+                                    <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                                </svg>
+                                    <div class="slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="assets/img/products/img_product.png" alt="фото продукта">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                    <div class="card__info">
+                                        <p class="card__title">Премудрости Красоты</p>
+                                        <p class="card__desc">Шампунь «Кедровый гребень Укрепление и объем»</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <div class="card__price price">
+                                            <p class="price__old">1360 ₽</p>
+                                            <div class="price__actual">
+                                                <p class="price__num">890 ₽</p>
+                                                <div class="price__sale tag tag--pink">−36%</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn btn--basket">
+                                            <img src="assets/img/icons/bag-small.svg" alt="корзина">
+                                        </div>
+                                    </div>
+                                    <div class="card__bottom--active">
+                                        <p class="price__num">890 ₽</p>
+                                        <div class="card__bottom">
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="center btn btn--default">
+                                                <span>1</span><span>&nbsp;шт</span>
+                                            </div>
+                                            <div class="btn">
+                                                <svg class="icon">
+                                                    <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-prev0"></div>
+                    <div class="swiper-button-next swiper-button-next0"></div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <img src="assets/img/icons/big-logo.svg" alt="fitocosmetic" class="footer__logo">
+                <div class="footer__content">
+                    <div class="footer__menu">
+                        <div class="footer__items">
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="link footer__link footer__link--active">
+                                        О компании 
+                                        <svg class="icon footer__media">
+                                            <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">О нас</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Блог</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Наши бренды</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Вакансии</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__items">
+                            <ul class="footer__links">
+                                <li><a href="#" class="link footer__link footer__link--active">Покупателям 
+                                    <svg class="icon footer__media">
+                                        <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                    </svg></a></li>
+                                <li><a href="#" class="link footer__link">Оплата и доставка</a></li>
+                                <li><a href="#" class="link footer__link">Гарантия и возврат</a></li>
+                                <li><a href="#" class="link footer__link">Сроки доставки</a></li>
+                                <li><a href="#" class="link footer__link">Сертификаты на продукцию</a></li>
+                                <li><a href="#" class="link footer__link">Где купить</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__items">
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="link footer__link footer__link--active">Бизнесу 
+                                        <svg class="icon footer__media">
+                                            <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                        </svg></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Контрактное производство</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Оптовые закупки</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__items">
+                            <div class="subscribe">
+                                <span class="footer__link--active">Подписка на рассылку</span>
+                                <div class="subscribe__form">
+                                    <input type="email" placeholder="Введите e-mail">
+                                    <img src="assets/img/icons/next.svg" alt="->">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <a href="tel:88007778549" class="footer__phone">8 800 777 85 49</a>
+                        <p class="footer__time">с 09:00 до 18:00 пн-пт</p>
+                        <p class="footer__address">117420, Москва, ул. Намёткина, 12а</p>
+                        <div class="footer__social">
+                            <a href="#"><img src="assets/img/icons/telegram.svg" alt="telegramm" class="footer__icon"></a>
+                            <a href="#"><img src="assets/img/icons/vk.svg" alt="vkontakte" class="footer__icon"></a>
+                            <a href="#"><img src="assets/img/icons/classmates.svg" alt="odnoklassniky" class="footer__icon"></a>
+                            <a href="#"><img src="assets/img/icons/tiktok.svg" alt="tiktok" class="footer__icon"></a>
+                            <a href="#"><img src="assets/img/icons/pinterest.svg" alt="pinterest" class="footer__icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <p class="footer__about">© 2024, ООО «Фитокосметик»</p>
+                    <a href="#" class="footer__doc link footer__link">Публичная оферта</a>
+                    <a href="#" class="footer__doc link footer__link">Политика конфидециальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

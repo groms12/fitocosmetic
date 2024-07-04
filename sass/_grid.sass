@@ -1,0 +1,233 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+html
+    font-weight: 500
+    font-family: 'TT Norms', sans-serif
+    font-size: 17px
+    line-height: 20px
+    overflow-x: hidden   
+input
+    font-family: 'TT Norms', sans-serif
+    font-weight: 500
+.body-no-scroll
+    overflow-y: hidden
+.body-modal
+    &::before
+        content: ''
+        display: block
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: rgba(0,0,0,0.3)     
+        z-index: 101
+main
+    padding-top: 140px    
+    z-index: 1 
+    position: relative
+.main
+    padding-top: 210px    
+.container 
+    width: 97%
+    max-width: 1328px
+    margin: auto
+    position: relative
+    &-2
+        max-width: 1104px
+ul
+    list-style: none
+a
+    text-decoration: none
+    color: inherit
+input
+    outline: none
+    border: none
+.green
+    color: $green        
+.btn
+    border: none
+    outline: none
+    padding: 16px
+    background-color: $green
+    color: #fff
+    border-radius: 8px
+    transition: all .3s
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    &--default
+        background-color: $gray06
+        color: $black
+    &--light
+        background-color: $green05
+        color: $green
+        svg
+            fill: $green03
+    &:hover
+        background-color: $green-def
+    &--more
+        margin-top: 32px
+        font-weight: 600
+    &--order
+        width: 100%
+        font-family: 'TT Norms', sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 19px
+        line-height: 20px
+        letter-spacing: -0.02em
+.breadcrumbs
+    margin-bottom: 16px
+    &__content
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        .link, span
+            margin-right: 4px
+            color: $gray03
+        .link
+            transition: all .3s
+            &:hover
+                color: $green
+.title
+    font-size: 44px
+    font-weight: 700
+    line-height: 48px
+    color: $black
+    &--small
+        font-size: 22px
+        line-height: 28px
+.tag
+    font-size: 10px
+    font-weight: 700
+    line-height: 12px
+    text-align: center
+    text-transform: uppercase
+    color: #fff
+    padding: 4px 8px
+    border-radius: 20px
+    margin-bottom: 4px
+    max-width: fit-content
+    &--blue
+        background: $blueGradient
+    &--orange
+        background: $orangeGradient
+    &--pink
+        background: $pinkGradient        
+.card
+    padding: 12px
+    box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06)
+    border-radius: 16px
+    position: relative
+    max-width: 320px
+    width: calc((100% - 32px) / 3)
+    &__tags
+        position: absolute
+        left: 12px
+        top: 12px
+        display: flex
+        flex-direction: column
+        z-index: 100
+    &__icon
+        position: absolute
+        right: 12px
+        top: 12px
+        width: 24px
+        height: 24px
+        fill: $gray04
+        z-index: 100
+        cursor: pointer
+        &--active
+            fill: $pink
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+    .center
+        width: 100%
+        text-align: center
+        margin-left: 4px
+        margin-right: 4px
+        cursor:  default
+        &:hover
+            background-color: $gray06
+            color: $black
+    &__title
+        font-size: 12px
+        font-weight: 700
+        line-height: 18px
+        text-transform: uppercase
+        margin-bottom: 4px
+        color: $gray01
+    &__desc
+        font-size: 14px
+        line-height: 18px
+        display: -webkit-box
+        -webkit-line-clamp: 2
+        -webkit-box-orient: vertical
+        overflow: hidden
+    &__bottom
+        margin-top: 8px
+        &--active
+            display: none
+            margin-top: 8px
+        .icon
+            fill: white
+            width: 16px
+            height: 16px
+    .slider
+        margin-top: 24px
+        max-height: 246px
+        &--active
+            max-height: 220px
+            .swiper-slide
+                img
+                    max-height: 186px
+                    max-width: 154px !important
+        .swiper-slide
+            max-width: unset
+            img
+                height: 230px
+                object-fit: contain
+                max-width: 205px
+                margin: auto
+                display: block
+    .swiper-pagination
+        position: relative
+        text-align: left
+        left: 0
+        &-bullet
+            width: 4px
+            height: 4px
+            background-color: $gray04
+            margin: 0 3px !important
+            opacity: 1
+            &-active
+                background-color: $gray02
+.price
+    position: relative
+    &__num
+        font-size: 22px
+        font-weight: 700
+        line-height: 28px
+    &__sale
+        max-width: fit-content
+        position: absolute
+        right: -78%
+        bottom: -2px
+    &__old
+        font-size: 14px
+        line-height: 20px
+        color: $gray03
+        text-decoration: line-through
+
+
+
+
+                

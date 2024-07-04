@@ -1,0 +1,238 @@
+.item
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 24px 0
+    &__content
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 70%
+    &__pos
+        display: flex
+        align-items: center
+        width: 37%
+        justify-content: space-between
+    &__count
+        p
+            margin: 0 12px
+            color: $gray02
+        svg
+            fill: $gray02
+            width: 16px
+            height: 16px
+    &__cost
+        font-size: 22px
+        font-weight: 700
+        line-height: 28px
+        color: $black
+    &__title
+        line-height: 24px
+        color: $black
+        margin-bottom: 8px
+        max-width: 345px
+    &__delete
+        display: flex
+        align-items: center
+        span
+            margin-left: 8px
+            color: $gray03
+    &__icon
+        width: 16px
+        height: 13px
+.title
+    &__left      
+        display: flex
+        align-items:  flex-end
+        justify-content: flex-start 
+.basket
+    &__content
+        display: flex
+        align-items:  flex-start
+        justify-content: space-between
+        position: relative
+    &__left
+        width: 100%
+    &__right
+        max-width: 432px
+        width: 100%
+        margin-left: 32px
+    &__title
+        display: flex
+        align-items:  center
+        justify-content: space-between
+        margin-bottom: 36px
+    &__info
+        color: $gray03
+        margin-left: 16px
+        margin-bottom: 4px
+    &__delete
+        cursor: pointer
+        color: $green
+    &__right
+        position: sticky
+        background-color: $gray06
+        border-radius: 24px
+        top: 140px
+        .title--small
+            font-size: 28px
+            font-weight: 700
+            line-height: 36px
+            margin-bottom: 16px
+.delivery
+    padding: 24px
+    background-color: $gray06
+    border-radius: 16px
+    &__main
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12)
+        padding: 24px
+        border-radius: 24px
+        background-color: #fff
+    &__dop
+        padding: 24px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-top: -10px
+        .dop__left
+            display: flex
+            align-items: center
+            img
+                margin-right: 8px
+        .btn
+            img 
+                transform: rotate(-90deg)
+    &__info
+        font-size: 19px
+        margin-bottom: 24px
+    &__param
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 12px
+        p
+            &:first-child
+                color: $gray02
+            &:last-child
+                color: $black
+    &__sale
+        margin-bottom: 24px
+        .delivery__param
+            p:last-child
+                color: $pink1
+        .sale
+            &__title
+                display: flex
+                align-items: center
+                margin-bottom: 12px
+                span
+                    color: $gray02
+                img
+                    transform: rotate(180deg)
+                    margin-left: 4px
+    &__cost
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 24px
+        p
+            color: $black
+            &:first-child
+                font-size: 19px
+            &:last-child
+                font-size: 22px
+                font-weight: 700
+                line-height: 28px
+    &__top
+        display: flex
+        align-items:  center
+        justify-content: space-between
+        margin-bottom: 20px
+        flex-wrap: wrap
+        p:first-child
+            color: $gray02
+            span
+                color: $black
+        p:last-child
+            color: $black
+    &__line
+        position: relative
+        span
+            display: block
+            height: 8px
+            border-radius: 4px
+            &:first-child
+                width: 100%
+                background-color: #fff
+            &:last-child
+                width: 40%
+                background: $greenGradient
+                position: absolute
+                top: 0
+                left: 0
+                bottom: 0
+            
+@media screen and ( max-width: 1250px )
+    .item 
+        position: relative
+        &__content
+            flex-wrap: wrap
+        &__pos
+            width: auto
+            .item__cost
+                margin-left: 24px
+        &__about
+            margin-bottom: 16px
+    .basket__right
+        max-width: 360px
+    
+@media screen and ( max-width: 965px )
+    .basket__left
+        position: relative
+        .title
+            &__left
+                .title__left
+                    position: absolute
+                    left: 0
+                    top: 50px
+                    .basket__count
+                        margin-left: 0
+@media screen and ( max-width: 900px )
+    .basket__content
+        flex-direction: column
+    .basket__right
+        margin-left: 0
+        position: relative
+        width: 100%
+        max-width: 100%
+        top: 40px
+        margin-bottom: 80px
+@media screen and ( max-width: 600px )
+    .popular__slider 
+        margin: 0 16px
+    .item
+        padding-bottom: 70px
+        margin-bottom: 40px
+        &__pos
+            position: absolute
+            left: 0
+            bottom: 0
+        .btn--light
+            position: absolute
+            right: 0
+            bottom: 0
+    .basket
+        &__title
+            position: relative
+            align-items: flex-end
+            margin-bottom: 18px
+            .title__left
+                .title__left
+                    position: absolute
+        &__delete
+            margin-bottom: 2px
+        &__info
+            &:first-child
+                margin-left: 0                    
+    .delivery__top p:first-child
+        margin-bottom: 20px

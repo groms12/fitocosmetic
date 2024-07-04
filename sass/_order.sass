@@ -1,0 +1,208 @@
+.order
+    padding-bottom: 80px
+    &-pay
+        margin: auto
+        max-width: fit-content
+        &__text
+            font-style: normal
+            font-weight: 500
+            font-size: 19px
+            line-height: 28px
+            letter-spacing: -0.01em
+            color: rgba(23, 26, 35, 0.8)
+            max-width: 340px
+            margin-bottom: 24px
+        .order__title
+            margin-bottom: 32px
+    &__left
+        flex-basis: 15%
+    &__center
+        flex-basis: 60%
+    &__right
+        flex-basis: 30%
+        margin-bottom: 20px
+    &__left
+        position: sticky
+        top: 160px
+    &__num
+        display: flex
+        transition: all .3s
+        align-items: center
+        justify-content: center
+        width: 48px
+        height: 48px
+        border-radius: 8px
+        background-color: $gray06
+        color: $gray01
+    &__step
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        margin-bottom: 16px
+        cursor: pointer
+        &:hover
+            .order__num
+                background-color: $green06
+        &--active
+            .order__num
+                color: #fff
+                background-color: $green
+                &:hover
+                    background-color: $green
+    &__type-text
+        font-size: 14px
+        line-height: 16px
+        color: $gray01
+        margin-left: 12px
+    &__title
+        margin-bottom: 72px
+    &__subtitle
+        font-size: 28px
+        color: $black
+        line-height: 36px
+        margin-bottom: 20px
+    &-type
+        &__items
+            display: flex
+            align-items: flex-start
+            justify-content: flex-start
+            flex-wrap: wrap
+            margin-bottom: 48px
+        &__item
+            border-radius: 16px
+            background-color: $gray07
+            border: 2px solid $gray07
+            position: relative
+            padding: 16px
+            max-width: 298px
+            cursor: pointer
+            margin-bottom: 8px
+            &:first-child
+                margin-right: 12px
+            &--active
+                border: 2px solid $green
+                img 
+                    fill: $green
+        &__input
+            position: absolute
+            top: 16px
+            right: 16px
+            accent-color: $green
+            width: 20px
+            height: 20px
+        &__img
+            margin-bottom: 12px
+            height: 24px
+        &__name
+            font-size: 22px
+            line-height: 28px
+            color: $black
+            margin-bottom: 8px
+            font-weight: 600
+        &__text
+            margin-bottom: 8px
+            color: $gray02  
+        &__date
+            color: $black
+            font-weight: 600
+    &-data
+        max-width: 570px
+        margin-bottom: 48px
+        margin-top: -42px
+        border-radius: 16px
+        background-color: $gray07
+        border: 2px solid $gray07
+        position: relative
+        padding: 16px
+        .order-type
+            &__name
+                font-size: 19px
+                line-height: 20px
+                margin-bottom: 8px
+            &__date
+                font-size: 17px
+                line-height: 20px
+                font-weight: 500
+                margin-bottom: 8px
+            &__text
+                margin-bottom: 0
+    &-delivery
+        cursor: pointer
+    &-post
+        display: none
+    &-man
+        margin-top: 20px
+        position: relative
+        cursor: pointer
+        &__change
+            position: absolute
+            top: 16px
+            right: 16px
+    &__info
+        margin-top: 40px
+        margin-bottom: 48px
+    &__data
+        input
+            width: 100%
+            display: block
+            border-bottom: 1px solid $gray04
+            padding: 14px 0
+            font-size: 17px
+            line-height: 20px
+            color: $black
+            font-weight: 500
+            margin-bottom: 16px
+            &:placeholder
+                color: $gray02
+    &__phone
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-bottom: 1px solid $gray04
+        margin-bottom: 16px
+        input
+            border-bottom: none
+            padding-bottom: 0
+    &__pay
+        margin-top: 40px
+        margin-bottom: 48px
+    &__vars
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+    &__var
+        height: 88px
+        flex-basis: 32%
+        &:first-child
+            margin-right: 0
+        &--active
+            border: 1px solid $green
+.dop__left input
+    background-color: transparent
+    font-style: normal
+    font-weight: 500
+    font-size: 17px
+    line-height: 24px
+    color: rgba(23, 26, 35, 0.8)
+.select-city
+    width: 100%
+@media screen and ( max-width: 900px )
+    .order
+        padding-bottom: 0
+        &__pay
+            margin-bottom: 0
+        &__left
+            display: none
+        &__center
+            flex-basis: 100%
+            width: 100%
+        &__title
+            margin-bottom: 24px
+@media screen and ( max-width: 570px )
+    .order__var
+        flex-basis: 49%
+@media screen and ( max-width: 350px )
+    .order__var
+        flex-basis: 100%
+    

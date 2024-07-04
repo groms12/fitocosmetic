@@ -1,0 +1,242 @@
+.cabinet
+    margin-bottom: 80px
+    &__info
+        display: grid
+        grid-gap: 12px
+        grid-template-columns: repeat(2, 1fr)
+        margin-top: 24px
+    &__link
+        display: flex !important
+        align-items: center
+        justify-content: center
+        span
+            color: $green
+            font-size: 17px
+            line-height: 20px
+            margin-right: 4px
+            line-height: 23px
+            font-weight: 500
+            display: block
+    &-info
+        &__start
+            display: flex
+            align-items: center
+            justify-content: space-between
+        &__procent
+            font-size: 28px
+            font-weight: 700
+            line-height: 36px
+            color: $green
+            padding: 27px
+            background: url('../img/cabinet/ellipse-proc.png') no-repeat center
+        &__nums
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 32px
+            margin-top: 16px
+        &__progress
+            margin-top: 32px
+            width: 100%
+            height: 16px
+            background-color: $gray05
+            border-radius: 12px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 4px
+            position: relative
+            span
+               width: 8px
+               height: 8px
+               background-color: #fff
+               border-radius: 50% 
+               display: block
+            &::after
+                content: ''
+                display: block
+                width: 22%
+                height: 16px
+                border-radius: 12px
+                background-color: $green
+                position: absolute
+                top: 0
+                left: 0
+                bottom: 0
+        &__text
+            p
+                text-align: left
+                color: $black
+                &:first-child
+                    font-size: 22px
+                    font-weight: 700
+                    line-height: 28px
+                    margin-bottom: 8px
+                &:last-child
+                    color: rgba(60, 62, 66, 1)
+                    line-height: 24px
+                    max-width: 273px
+        &__left
+            padding: 36px 24px
+            p
+                color: $black
+                font-size: 22px
+                font-weight: 700
+                line-height: 28px
+                text-align: center
+                margin-bottom: 4px
+            a
+                color: $gray02
+                margin-bottom: 8px
+                display: block
+        &__avatar
+            border-radius: 50%
+            width: 112px
+            height: 112px
+            object-fit: cover
+            margin-bottom: 8px
+        &__item
+            background-color: $gray07
+            padding: 24px
+            border-radius: 16px
+            text-align: center
+            margin-bottom: 12px
+    &__item
+        display: flex
+        align-items: center
+        justify-content: space-between
+        background-color: $gray07
+        padding: 24px
+        border-radius: 16px
+        margin-bottom: 12px
+    &__left
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        img
+           margin-right: 12px
+        p
+            color: $gray01
+            font-size: 19px
+            line-height: 20px
+            margin-right: 12px
+            font-weight: 600
+        span
+            padding: 2px 8px
+            text-align: center
+            vertical-align: middle
+            background-color: $green
+            color: #fff
+            border-radius: 50%
+    &__right
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        p
+            margin-right: 12px
+            color: $gray02
+        img
+            transform: rotate(-90deg)
+    &__data
+        max-width: 60%
+        margin-top: 24px
+    &-photo
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        margin-bottom: 24px
+        img
+            width: 56px
+            height: 56px
+            border-radius: 50%
+            object-fit: cover
+        &__link
+            margin-left: 16px
+            color: $gray01
+            font-weight: 600
+    .btn--save
+        color: #fff
+        max-width: fit-content
+        padding: 14px 18px
+        border: none
+.green, .logout
+    color: $green
+    font-weight: 600
+.logout
+    margin-top: 40px
+    display: block
+.orders
+    margin-bottom: 80px
+.order
+    &-item   
+        padding: 16px
+        background-color: $gray07
+        border-radius: 16px
+        margin-top: 16px
+        &__products
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            overflow-x: scroll
+            .img
+                background-color: #fff
+                border-radius: 4px
+                padding: 4px
+                margin-right: 4px
+                img
+                    width: 54px
+                    height: 64px
+                    object-fit: contain
+                    mix-blend-mode: multiply
+        &__block
+            padding: 14px 0
+            border-top: 1px solid $gray05
+            .order-item__text
+                margin-bottom: 8px
+        &__address
+            color: $black
+            font-weight: 600
+        &__number
+            color: $black
+            margin-right: 8px
+        &__date
+            color: $gray02
+        &__cost
+            color: $black
+        &__flex
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 12px
+        &__left
+            display: flex
+            align-items: center
+            justify-content: flex-start
+            .circle
+                display: block
+                width: 8px
+                height: 8px
+                border-radius: 50%
+                background-color: $green
+                margin-right: 6px
+        &__text
+            color: $gray02
+            font-size: 14px
+            line-height: 16px
+        &__right
+            a
+                font-size: 14px
+                line-height: 16px
+                color: $green
+@media screen and ( max-width: 700px )
+    .cabinet
+        &__info
+            display: grid
+            grid-gap: 12px
+            grid-template-columns: 1fr
+            margin-bottom: 12px
+        &-info__item 
+            margin-bottom: 0   
+        &__data
+            max-width: 100%
+            

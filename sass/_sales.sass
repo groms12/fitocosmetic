@@ -1,0 +1,23 @@
+.sales
+    &__content
+        display: flex
+        gap: 16px
+        justify-content: center
+        flex-wrap: wrap
+        a
+            flex-basis: 32%
+        img
+            width: 100%
+            border-radius: 32px
+@media screen and ( max-width: 825px )
+    .sales
+        &__content
+            a
+                flex-basis: 47%
+@media screen and ( max-width: 400px )
+    
+    .sales
+        &__content
+            a
+                flex-basis: 100%
+                

@@ -1,0 +1,300 @@
+.header
+    position: fixed
+    width: 100%
+    background: #fff
+    z-index: 100
+    &__menu
+        padding: 12px 0
+        background-color: $gray06
+    &__content
+        display: flex
+        position: relative
+        align-items: center
+        justify-content: space-between
+    &__city
+        display: flex
+        align-items: center
+        transition: all .3s
+        position: relative
+        font-size: 14px
+        line-height: 16px
+        img
+            margin-right: 4px
+        &:hover
+            cursor: pointer
+            color: $green
+    &__block
+        padding: 16px 0
+        background-color: #fff
+    &__search
+        position: relative
+        width: 84%
+        input
+            width: 100%
+            background-color: $gray06
+            border-radius: 8px
+            padding: 14px
+            padding-left: 20px
+            height: 48px
+            &::placeholder
+                font-size: 17px
+                line-height: 20px
+            &:focus-visible
+                &~img
+                    display: none
+                &~.search__content
+                    display: block
+        img
+            position: absolute
+            right: 17px
+            top: 0
+            bottom: 0
+            margin: auto
+    &__media
+        display: none
+    &-catalog
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 73%
+        position: relative
+    .icons
+        &__link
+            position: relative
+            &:not(:first-child)
+                margin-left: 28px
+            .num
+                position: absolute
+                top: -3px
+                right: -7px
+                padding: 1px 5px
+                font-style: normal
+                font-weight: 500
+                font-size: 11px
+                line-height: 14px
+                color: #FFFFFF
+                background-color: $green01
+                border: 1px solid rgba(255, 255, 255, 1)
+                border-radius: 100px
+                display: block
+                max-width: fit-content
+.search
+    &__content
+        position: absolute
+        display: none
+        top: 100%
+        left: 0
+        right: 0
+        width: 100%
+        background-color: #fff  
+        padding: 8px
+        border-radius: 14px
+        z-index: 100
+        margin-top: 12px
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12)
+    &__text
+        padding: 10px 16px
+        color: $gray01
+        display: block
+        border-radius: 6px
+        &:hover
+            background-color: $gray06
+            cursor: pointer
+.media-bottom
+    position: fixed
+    left: 0
+    right: 0
+    width: 100%
+    bottom: 0
+    padding: 7px 0 11px
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12)
+    background-color: #fff
+    &__items
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+    &__item        
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        span
+            font-size: 10px
+            line-height: 12px
+            color: $gray02
+        &--active
+            span
+                color: $gray01
+            img
+                fill: $gray01
+.bottom-menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    overflow: scroll
+    &::-webkit-scrollbar
+        width: 0
+    &__link
+        color: $black
+        font-weight: 500
+        white-space: nowrap
+        margin: 0 5px
+        &:hover
+            color: $green
+.menu
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    &__link
+        margin-left: 16px
+        transition: all 0.3s
+        font-size: 14px
+        line-height: 16px
+        &:hover
+            color: $green
+        &--gray
+            color: $gray02
+            cursor:  default
+            &:hover
+                color: $gray02
+.catalog
+    &__btn
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 14px 18px
+        .icon
+            transition: all .3s 
+            margin-right: 12px
+            width: 16px
+            height: 16px
+            fill: #fff
+        &:hover
+            .icon
+                fill: $green
+.icons
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    .icon
+        width: 24px
+        height: 24px
+        fill: $gray03
+        transition: all .3s
+        &:hover
+            cursor: pointer
+            fill: $green
+.catalog
+    &-content
+        display: none
+        align-items: flex-start
+        justify-content: space-between     
+        position: absolute      
+        z-index: 100
+        top: 60px
+        background-color: #fff
+        max-width: 100%  
+        margin: auto
+        left: 0
+        right: 0
+        border-radius: 16px
+        padding: 24px
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12)
+        &--active
+            display: flex
+        .item-li
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 10px 0
+            transition: all .3s
+            cursor: pointer
+            img
+                transform: rotate(-90deg)
+            &--active, &:hover
+                color: $green
+        .item-dop
+            display: none
+            &--active
+                display: block
+            .title
+                font-size: 22px
+                line-height: 28px
+    &-item
+        flex-basis: 33%
+        padding: 0 16px
+        &:first-child
+            border-right: 1px solid $gray04 
+            padding-left: 0
+        &:last-child
+            padding-right: 0
+    &-banner
+        max-width: 384px
+        height: 320px
+        object-fit: cover
+        border-radius: 16px
+.menu__media
+    text-align: left
+    width: 100%
+    height: 100vh
+    background-color: #fff
+    padding: 16px
+    overflow-y: scroll
+    left: -100%
+    position: absolute
+    &--active
+        left: 0
+        transition: left 0.5s
+    &-info
+        .footer__contacts
+            text-align: left
+            margin-left: 0
+        .footer__social
+            justify-content: space-between
+            width: 100%
+            max-width: 300px
+    &-items
+        margin-top: 16px
+        span
+            width: 100%
+            height: 1px
+            display: block
+            background-color: $gray04
+            margin: 14px 0
+        a
+            padding: 14px 0
+            font-size: 19px
+            line-height: 20px
+            font-weight: 600
+            color: $gray01
+            display: block
+    
+@media screen and ( max-width: 1210px )
+    .header__search
+        width: 80%
+    .header-catalog
+        width: 70%
+@media screen and ( max-width: 975px )
+    .breadcrumbs
+        display: none
+    .header
+        &__media
+            box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.06)
+            display: block
+            // margin-bottom: 32px
+            .container
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 12px 0
+        &__menu, &__block, &__bottom 
+            display: none !important
+    main, .main
+        padding-top: 70px
+    .modal--moscow, .modal--done
+        top: 85px !important
+@media screen and ( max-width: 750px )
+    main, .main
+        padding-top: 60px

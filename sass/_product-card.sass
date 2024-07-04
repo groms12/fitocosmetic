@@ -1,0 +1,419 @@
+.product-card
+    padding-bottom: 80px
+    padding-top: 60px
+    position: relative
+    .btn--link-basket
+        display: none
+        height: 48px
+    &__content
+        position: relative
+        display: flex
+        justify-content: space-between
+        margin-bottom: 80px
+    &__left
+        width: 60%
+        max-width: 496px
+        position: relative
+    &__right
+        position: sticky
+        right: 0
+        height: fit-content 
+        top: 120px
+        width: fit-content
+        margin-left: 32px
+    &__brand
+        font-size: 19px
+        color: $gray01
+        margin-bottom: 16px
+    &__title
+        color: $gray01
+        font-size: 36px
+        font-weight: 700
+        line-height: 40px
+        max-width: 544px
+        margin-bottom: 16px
+    &__info
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        margin-bottom: 16px
+        .articul
+            color: $gray03
+            font-size: 13px
+            line-height: 16px
+            letter-spacing: -0.26px
+    &__data
+        background-color: $gray06
+        padding: 24px
+        border-radius: 24px
+        margin-bottom: 12px
+        &--active
+            .data__text
+                display: block
+    .data__title
+        display: flex
+        align-items: center
+        justify-content: space-between
+        font-size: 22px
+        font-weight: 700
+        line-height: 28px
+        color: $gray01
+        max-width: 100%
+        margin-bottom: 0
+        .icon
+            width: 16px
+            height: 16px
+            fill: $gray01
+    &__rewievs
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        margin-bottom: 24px
+    &__stars
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        img
+            width: 14px
+            margin-right: 4px
+    &__count
+        margin-right: 4px
+        color: $gray01
+        font-size: 13px
+        line-height: 16px
+        letter-spacing: -0.26px
+        &-text
+            color: $gray03
+            font-size: 13px
+            line-height: 16px
+            letter-spacing: -0.26px
+    &__colors
+        padding: 12px
+        background: $gray06
+        border-radius: 12px
+        margin-bottom: 24px
+    &__name-color
+        color: $gray01
+        font-size: 16px
+        line-height: 20px
+        letter-spacing: -0.32px
+        margin-bottom: 12px
+    &__colors-items
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        flex-wrap: wrap
+    &__color
+        padding: 5px
+        padding-bottom: 0
+        cursor: pointer
+        border: 2px solid transparent
+        img
+            width: 30px
+            height: 30px
+        &--active
+            border-radius: 30px
+            border: 2px solid $gray01
+            margin-bottom: 0
+    &__advantages
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__advant
+        display: flex
+        align-items: center
+        margin: 48px 0
+        img
+            margin-right: 12px
+        p
+            max-width: 114px
+            font-size: 14px
+            line-height: 16px
+            color: $gray01
+    &__img
+        border: 1px solid rgba(36, 43, 69, 0.2)
+        border-radius: 32px
+        width: 100%
+        height: 100%
+        max-height: 500px
+        img
+            width: 100%
+            height: 100%
+            object-fit: contain
+            margin: auto
+    &__more
+        display: flex
+        margin-bottom: 20px
+    &__hit
+        margin-bottom: 80px
+        .popular__title
+            margin-bottom: 32px
+        .hit__content
+            background-color: #fff
+        .popular__content
+            padding: 0
+        .card
+            box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.06)
+.rewievs
+    padding-top: 80px
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 100%
+    &__top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+    &__title
+        margin-top: 32px
+        margin-bottom: 32px
+    &__count
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        width: 100%
+        &--text
+            color: $gray03
+            font-size: 19px
+            line-height: 20px
+            margin-left: 10px
+    &__num
+        color: $black
+        font-size: 28px
+        font-weight: 600
+        line-height: 36px
+        text-transform: uppercase
+        margin-left: 10px
+    &__stars
+        margin-left: 10px
+        img
+            width: 24px
+    &-table
+        &__item
+            padding-top: 32px
+            padding-bottom: 32px
+            border-top: 1px solid $gray04
+            display: flex
+            align-items: flex-start
+            justify-content: flex-start
+        &__person
+            flex-basis: 20%
+        &__rewiev
+            flex-basis: 80%
+        &__name
+            color: $gray01
+            font-size: 19px
+            line-height: 125%
+            letter-spacing: -0.19px
+            margin-bottom: 4px
+        &__date
+            color: $gray03
+            font-size: 15px
+            line-height: 135%
+            letter-spacing: -0.15px
+        &__text
+            color: $gray01
+            font-size: 15px
+            line-height: 135%
+            letter-spacing: -0.15px
+            margin-top: 10px
+        &__stars
+            img
+                width: 16px
+    &__btn
+        border: none     
+    &__more
+        display: flex
+        align-items: center 
+.more__link
+    border-radius: 8px
+    height: 64px
+    border: 2px solid $gray04  
+    width: 53px
+    display: block
+    margin-right: 10px
+    padding: 1px
+    img
+        object-fit: contain 
+        height: 100%
+        width: 100%
+        border-radius: 8px
+    &--active
+        border: 2px solid #638C1C   
+.product-card__slider
+    position: relative  
+    height: 100%
+    max-height: 496px
+    .swiper
+        overflow: visible !important
+        &-slide
+            border: 1px solid $gray04
+            border-radius: 32px
+            img
+                max-height: 594px
+                width: 100%
+                height: 100%
+                object-fit: contain
+                display: block
+                margin: auto
+.swiper        
+    &-pagination-1        
+        position: absolute
+        top: 0
+        left: -110px
+        display: flex
+        flex-direction: column
+        z-index: 100
+        width: fit-content
+.swiper_pagination_img
+    width: 80px
+    height: 95px
+    object-fit: contain
+    border-radius: 8px
+    border: 1px solid $gray04
+    &:not(:last-child)
+        margin-bottom: 8px
+    &--active
+        border: 1px solid $green
+.data__text
+    font-weight: 400
+    line-height: 24px
+    margin-top: 12px    
+    display: none        
+.characteristic
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    color: $gray02
+    margin-bottom: 15px
+    .dotted
+        border-bottom: 1px dotted $gray02  
+        width: 100%       
+    p
+        white-space: nowrap         
+.colors
+    &__title
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 12px
+        .product-card__name-color
+            margin-bottom: 0
+    &__more
+        font-size: 13px
+        line-height: 16px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        color: $gray01
+        img
+            width: 24px
+            height: 24px
+        &:hover
+            cursor: pointer
+            color: $green01
+.info
+    background: rgba(247, 240, 229, 1)
+    border-radius: 24px
+    .btns
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        .btn
+            margin-left: 8px
+            img
+                margin-left: 8px
+    .card__bottom
+        padding-bottom: 20px
+        border-bottom: 1px solid $gray04
+        margin-bottom: 20px
+        .btn--basket
+            height: 48px
+    &__text
+        margin-bottom: 4px
+        color: $gray01
+    &__top
+        background-color: #fff
+        padding: 24px
+        border-radius: 24px
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12)
+    &__bottom
+        padding: 24px
+        .bold
+            font-weight: 700
+            margin-bottom: 8px
+.markets
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    gap: 12px
+    margin-top: 24px
+    margin-bottom: 24px
+.market
+    height: 48px
+    width: 49%
+    border-radius: 8px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: all .3s
+    &--ozon
+        background-color: rgba(0, 91, 255, 1)
+        &:hover
+            background-color: rgba(0, 76, 214, 1)
+    &--wb
+        background-color: rgba(172, 35, 154, 1)
+        &:hover
+            background-color: rgba(149, 39, 135, 1)
+@media screen and ( max-width: 840px )
+    .product-card
+        &__content
+            flex-direction: column
+        &__left
+            max-width: 100%  
+            width: 100%          
+            height: 400px
+            margin-bottom: 30px
+        &__right
+            position: relative
+            width: 100%
+            margin-left: 0
+            top: 0px
+            margin: auto
+            margin-bottom: 60px
+@media screen and ( max-width: 680px )
+    .markets
+        flex-direction: column
+    .market
+        width: 100%
+    .rewievs
+        &__count
+            flex-direction: column
+            align-items: flex-start
+            margin-bottom: 32px
+        &__num
+            margin-left: 0
+@media screen and ( max-width: 500px )
+    .product-card__advantages
+        align-items: flex-start
+        flex-wrap: wrap
+    .product-card__advant
+        flex-direction: column
+        text-align: center
+        p
+            margin-top: 8px
+    .rewievs-table__item
+        flex-direction: column        
+    .rewievs-table__person
+        flex-basis: 100%
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between   
+    .rewievs__stars
+        img:not(:first-child)
+            display: none                  
+    .rewievs__bottom
+        flex-wrap: wrap            

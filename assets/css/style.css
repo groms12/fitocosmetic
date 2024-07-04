@@ -510,6 +510,10 @@ input {
   position: relative;
 }
 
+.header .icons__link:hth-child(2), .header .icons__link:hth-child(4) {
+  display: none;
+}
+
 .header .icons__link:not(:first-child) {
   margin-left: 28px;
 }

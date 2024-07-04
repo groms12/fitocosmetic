@@ -510,7 +510,7 @@ input {
   position: relative;
 }
 
-.header .icons__link:nth-child(2), .header .icons__link:nth-child(4) {
+.header .icons__link:nth-child(2n) {
   display: none;
 }
 

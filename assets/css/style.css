@@ -4192,6 +4192,18 @@ input {
   }
 }
 
+.blog__img {
+  height: 200px;
+  width: 100%;
+}
+
+.blog__img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 .page-blog__title {
   margin-bottom: 32px;
   font-size: 44px;

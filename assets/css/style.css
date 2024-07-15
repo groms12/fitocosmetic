@@ -4198,10 +4198,10 @@ input {
 }
 
 .blog__img img {
-  width: 100%;
-  height: 100%;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  width: 100% !important;
+  height: 100% !important;
+  -webkit-transform: rotate(0deg) !important;
+          transform: rotate(0deg) !important;
 }
 
 .page-blog__title {

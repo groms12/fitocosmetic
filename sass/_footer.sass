@@ -21,7 +21,7 @@ footer
         display: flex
         align-items: center
         justify-content: flex-start
-        margin-top: 40px
+        // margin-top: 40px
     &__links li
         margin-bottom: 16px
     &__link
@@ -58,7 +58,7 @@ footer
         align-items: center
         justify-content: space-between
     &__doc
-        margin-left: 32px
+        margin-left: 49px
     &__mail
         display: block
         margin-bottom: 40px
@@ -89,9 +89,21 @@ footer
             right: 0
             margin: auto
 
+@media screen and ( max-width: 975px )
+    footer
+        padding-bottom: 90px
+        padding-left: 16px
+        padding-right: 16px
+    .footer
+        &__logo
+            margin-left: 50px
 @media screen and ( max-width: 840px )
     .footer__links
         margin-right: 40px
+@media screen and ( max-width: 750px )
+    .footer
+        .container
+            padding: 0 16px
 @media screen and ( max-width: 700px )
     .footer
         &__menu

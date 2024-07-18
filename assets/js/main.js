@@ -113,6 +113,9 @@ $('.modal__li').click(function() {
     $('.header__city span').text(city);
     $('html').removeClass('body-no-scroll');
 });
+$('.header__city').click(function() {
+    $('.modal--city').addClass('modal--active');
+});
 $('.modal__btns .btn').click(function() {
     $('.modal').removeClass('modal--active');
     setTimeout(function() {

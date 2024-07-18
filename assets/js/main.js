@@ -340,7 +340,7 @@ const swiper = new Swiper('.slider', {
     pagination: {
         el: '.swiper-pagination',
     },
-    loop: true,
+    loop: false,
     centeredSlides: true,
     observer: true,
     observeParents: true,

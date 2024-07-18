@@ -406,6 +406,7 @@ const swiper0 = new Swiper('.popular__slider-1', {
         prevEl: '.swiper-button-prev0',
     },
     loop: true,
+    loopFillGroupWithBlank: true,
     breakpoints: {
         1360: {
             slidesPerView: 5,

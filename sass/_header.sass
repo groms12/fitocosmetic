@@ -43,7 +43,7 @@
                 &~img
                     display: none
                 &~.search__content
-                    display: block
+                    z-index: 100
         img
             position: absolute
             right: 17px
@@ -83,7 +83,7 @@
 .search
     &__content
         position: absolute
-        display: none
+        display: block
         top: 100%
         left: 0
         right: 0
@@ -91,7 +91,7 @@
         background-color: #fff  
         padding: 8px
         border-radius: 14px
-        z-index: 100
+        z-index: -1
         margin-top: 12px
         box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.12)
     &__text

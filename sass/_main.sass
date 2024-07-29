@@ -142,10 +142,14 @@
         .swiper-slide
             background-color: $gray06  
             border-radius: 16px 
+            height: 176px
             img
                 mix-blend-mode: multiply
                 display: block
                 margin: auto
+                width: 100%
+                height: 100%
+                object-fit: contain
 .hit
     margin-top: 64px
     &__content
@@ -306,6 +310,7 @@
             .card
                 width: calc( (100% - 12px * 2) / 3 )
                 max-width: 33%
+                min-width: 175px
     .hero
         &__block
             max-width: 364px
@@ -350,6 +355,12 @@
                 width: calc((100% - 12px) / 2)
                 flex-basis: unset
 @media screen and ( max-width: 750px )
+    body
+        overflow: hidden
+    .sales__slider, .popular__slider, .blog__slider 
+        overflow: visible !important
+    .new__info
+        padding: 12px
     .container
         padding: 0
     .swiper-button-prev5, .swiper-button-prev0, .swiper-button-next0,  .swiper-button-next5, .swiper-button-prev1, .swiper-button-next1, .swiper-button-prev2, .swiper-button-next2, .swiper-button-prev3, .swiper-button-next3, .swiper-button-prev4, .swiper-button-next4
@@ -405,6 +416,9 @@
         .container
             padding: 0 12px
 @media screen and ( max-width: 700px )
+    .sales, .brands, .blog
+        margin-top: 40px
+        margin-bottom: 40px
     .new
         &__content          
             .card
@@ -424,7 +438,8 @@
             font-size: 36px
             line-height: 40px
     .card .slider .swiper-slide img
-        max-width: 100px
+        max-width: 80%
+        height: 180px
     .hero
         &__img
             height: 468px
@@ -465,6 +480,11 @@
         max-width: fit-content
         font-size: 17px
         line-height: 20px
+@media screen and ( max-width: 385px )
+    .new__content .card
+        max-width: 48%
+        width: auto
+        min-width: auto
 @media screen and ( max-width: 370px )
     .banner__content
         padding: 24px 10px

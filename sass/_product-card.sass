@@ -245,14 +245,14 @@
 .product-card__slider
     position: relative  
     height: 100%
-    max-height: 496px
+    max-height: 594px
+    width: 88%
     .swiper
         overflow: visible !important
         &-slide
             border: 1px solid $gray04
             border-radius: 32px
             img
-                max-height: 594px
                 width: 100%
                 height: 100%
                 object-fit: contain
@@ -392,7 +392,20 @@
             top: 0px
             margin: auto
             margin-bottom: 60px
+@media screen and ( max-width: 750px )
+    .container-2
+        padding: 0 16px !important
 @media screen and ( max-width: 680px )
+    .rewievs
+        padding-top: 32px
+    .hit
+        margin-top: 32px !important
+    .product-card
+        padding-bottom: 32px
+        &__content
+            margin-bottom: 32px
+        &__right
+            margin-bottom: 0
     .markets
         flex-direction: column
     .market

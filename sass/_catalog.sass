@@ -50,7 +50,7 @@
         display: block
 .filter
     &__category
-        padding: 10px 0
+        // padding: 10px 0
         width: 100%
         display: flex
         align-items: center
@@ -123,7 +123,7 @@
             width: 48px
             height: 48px
             &--active
-                background-color: $green01
+                background-color: rgba(87, 155, 17, 1)
                 &:hover
                     color: #fff
 .catalog-info
@@ -288,7 +288,7 @@
             display: flex
             align-items: center
             justify-content: flex-start
-            padding: 12px
+            // padding: 12px
             border-radius: 8px
             &:first-child
                 margin-right: 4px
@@ -308,6 +308,7 @@
 @media screen and ( max-width: 665px )
     .catalog
         &__pages
+            margin-bottom: 32px
             .page:nth-child(4), .page:nth-child(5)
                 display: none
         &__cards
@@ -333,6 +334,9 @@
         .btn
             padding: 10px
             height: 36px
+@media screen and ( max-width: 750px )
+    .catalog .container
+        padding: 0 12px
 @media screen and ( max-width: 550px )
     .brand
         padding-bottom: 16px

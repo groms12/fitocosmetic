@@ -391,7 +391,7 @@ const swiper2 = new Swiper('.popular__slider', {
         },
         1050: {
             slidesPerView: 4,
-            centeredSlides: true,
+            centeredSlides: false,
         },
         680: {
             slidesPerView: 'auto',

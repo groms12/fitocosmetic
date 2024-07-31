@@ -243,6 +243,14 @@ $('.burger').click(function() {
     $('.menu__media').toggleClass('menu__media--active');
     $(this).toggleClass('burger--active');
 });
+$('.mobile-search').click(function() {
+    $('.search__media').toggleClass('search__media--active');
+    $('html').addClass('body-no-scroll');
+});
+$('.search-back').click(function() {
+    $('.search__media').toggleClass('search__media--active');
+    $('html').removeClass('body-no-scroll');
+});
 $('.modal--moscow .btn-yes').click(function() {
     $('.modal--moscow').removeClass('modal--active');
     $('html').removeClass('body-no-scroll');

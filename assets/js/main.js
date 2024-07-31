@@ -245,6 +245,7 @@ $('.burger').click(function() {
 });
 $('.mobile-search').click(function() {
     $('.search__media').toggleClass('search__media--active');
+    $('.search__media input').focus();
     $('html').addClass('body-no-scroll');
 });
 $('.search-back').click(function() {

@@ -86,18 +86,23 @@
         display: block
         width: 20px
         height: 2px
-        border-radius: 10px
+        border-radius: 2px
         background-color: $black
+        margin-top: 6px
+        transition: all .3s
         &:first-child
             width: 13px
+            margin-top: 0
     &--active  
         span   
             &:first-child
                 display: none    
             &:nth-child(2)
                 transform: rotate(45deg)
+                margin-top: -2px
             &:last-child
                 transform: rotate(-45deg)
+                margin-top: 0
 .search
     &__content
         position: absolute

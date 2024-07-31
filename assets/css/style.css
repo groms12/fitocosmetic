@@ -495,18 +495,6 @@ input {
   display: none;
 }
 
-.header__media .burger {
-  display: none;
-}
-
-.header__media .burger--active {
-  display: block;
-}
-
-.header__media .burger--nonactive {
-  display: none;
-}
-
 .header-catalog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,6 +538,18 @@ input {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.burger {
+  display: none;
+}
+
+.burger--active {
+  display: block;
+}
+
+.burger--nonactive {
+  display: none;
 }
 
 .search__content {

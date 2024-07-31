@@ -241,6 +241,8 @@ $('.catalog__btn').click(function() {
 });
 $('.header__media img[alt="menu"]').click(function() {
     $('.menu__media').toggleClass('menu__media--active');
+    $('.burger').toggleClass('burger--active');
+    $(this).toggleClass('burger--nonactive');
 });
 $('.modal--moscow .btn-yes').click(function() {
     $('.modal--moscow').removeClass('modal--active');

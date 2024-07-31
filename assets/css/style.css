@@ -3567,14 +3567,31 @@ input {
   color: rgba(23, 26, 35, 0.8);
   margin-left: 10px;
 }
-.modal--add-address, .modal--my-address, .modal--persons, .modal--add-person {
+.modal--add-address, .modal--my-address, .modal--persons, .modal--add-person, .modal--rewiev {
   max-width: 600px;
   max-height: -moz-fit-content;
   max-height: fit-content;
   display: none;
 }
-.modal--add-address .modal__content, .modal--my-address .modal__content, .modal--persons .modal__content, .modal--add-person .modal__content {
+.modal--add-address .modal__content, .modal--my-address .modal__content, .modal--persons .modal__content, .modal--add-person .modal__content, .modal--rewiev .modal__content {
   padding: 48px 40px;
+}
+.modal--add-address .count-words, .modal--my-address .count-words, .modal--persons .count-words, .modal--add-person .count-words, .modal--rewiev .count-words {
+  text-align: right;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 8px;
+  color: rgba(32, 38, 56, 0.6);
+}
+.modal--add-address .rewiev__go, .modal--my-address .rewiev__go, .modal--persons .rewiev__go, .modal--add-person .rewiev__go, .modal--rewiev .rewiev__go {
+  margin-top: 48px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+}
+.modal--add-address .rewiev__form, .modal--my-address .rewiev__form, .modal--persons .rewiev__form, .modal--add-person .rewiev__form, .modal--rewiev .rewiev__form {
+  margin-top: 24px;
 }
 .modal--map {
   width: 943px;
@@ -3962,12 +3979,12 @@ input {
     border-top-right-radius: 24px;
     max-width: 100%;
   }
-  .modal--sale, .modal--auth, .modal--reg, .modal--login, .modal--code, .modal--sort, .modal--add-address, .modal--my-address, .modal--persons, .modal--add-person {
+  .modal--sale, .modal--auth, .modal--reg, .modal--login, .modal--code, .modal--sort, .modal--add-address, .modal--my-address, .modal--persons, .modal--add-person, .modal--rewiev {
     bottom: 0;
     top: auto;
     max-height: 80%;
   }
-  .modal--sale .modal__title, .modal--auth .modal__title, .modal--reg .modal__title, .modal--login .modal__title, .modal--code .modal__title, .modal--sort .modal__title, .modal--add-address .modal__title, .modal--my-address .modal__title, .modal--persons .modal__title, .modal--add-person .modal__title {
+  .modal--sale .modal__title, .modal--auth .modal__title, .modal--reg .modal__title, .modal--login .modal__title, .modal--code .modal__title, .modal--sort .modal__title, .modal--add-address .modal__title, .modal--my-address .modal__title, .modal--persons .modal__title, .modal--add-person .modal__title, .modal--rewiev .modal__title {
     font-size: 28px;
     line-height: 36px;
   }
@@ -3996,12 +4013,12 @@ input {
   .modal__inp .modal__input {
     max-width: 100% !important;
   }
-  .modal--add-address, .modal--add-person {
+  .modal--add-address, .modal--add-person, .modal--rewiev {
     max-height: 100%;
     height: 100vh;
     border-radius: 0;
   }
-  .modal--add-address .modal__content, .modal--add-person .modal__content {
+  .modal--add-address .modal__content, .modal--add-person .modal__content, .modal--rewiev .modal__content {
     padding: 40px 16px;
   }
 }

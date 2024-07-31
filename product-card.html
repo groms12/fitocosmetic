@@ -10,6 +10,20 @@
 </head>
 
 <body>
+
+    <div class="modal modal--rewiev">
+        <a href="#" class="modal__close"><img src="assets/img/icons/modal-close.svg" alt="x"></a>
+        <div class="modal__content">
+            <h2 class="modal__title">Оставить отзыв</h2>
+            <form action="#" class="modal__form rewiev__form">
+                <input class="modal__mail" type="text" placeholder="Имя">
+                <input class="modal__mail" type="email" placeholder="Электронная почта">
+                <textarea class="modal__comment" placeholder="Ваш отзыв"></textarea>
+                <p class="count-words"><span>0</span> / <span>300</span></p>
+                <input class="modal__btn btn rewiev__go" type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
     <header class="header">
         <div class="header__media">
             <div class="container">
@@ -469,7 +483,7 @@
                                     </div>
                                     <p class="rewievs__count--text">204 отзыва</p>
                                 </div>
-                                <div class="btn">Оставить отзыв</div>
+                                <div class="btn rewiev__btn">Оставить отзыв</div>
                             </div>
                         </div>
                     </div>

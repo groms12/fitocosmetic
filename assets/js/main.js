@@ -248,6 +248,9 @@ $('.mobile-search').click(function() {
     $('.search__media input').focus();
     $('html').addClass('body-no-scroll');
 });
+$('.rewiev__btn').click(function() {
+    $('.modal--rewiev').addClass('modal--active');
+});
 $('.search-back').click(function() {
     $('.search__media').toggleClass('search__media--active');
     $('html').removeClass('body-no-scroll');

@@ -239,10 +239,9 @@ $('.modal__back').click(function() {
 $('.catalog__btn').click(function() {
     $('.catalog-content').toggleClass('catalog-content--active');
 });
-$('.header__media img[alt="menu"]').click(function() {
+$('.burger').click(function() {
     $('.menu__media').toggleClass('menu__media--active');
-    $('.burger').toggleClass('burger--active');
-    $(this).toggleClass('burger--nonactive');
+    $(this).toggleClass('burger--active');
 });
 $('.modal--moscow .btn-yes').click(function() {
     $('.modal--moscow').removeClass('modal--active');

@@ -540,16 +540,30 @@ input {
   max-width: fit-content;
 }
 
-.burger {
-  display: none;
-}
-
-.burger--active {
+.burger span {
   display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #171a23;
 }
 
-.burger--nonactive {
+.burger span:first-child {
+  width: 13px;
+}
+
+.burger--active span:first-child {
   display: none;
+}
+
+.burger--active span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.burger--active span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .search__content {

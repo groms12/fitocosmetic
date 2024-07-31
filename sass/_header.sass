@@ -82,11 +82,22 @@
                 display: block
                 max-width: fit-content
 .burger
-    display: none
-    &--active
+    span
         display: block
-    &--nonactive
-        display: none                
+        width: 20px
+        height: 2px
+        border-radius: 10px
+        background-color: $black
+        &:first-child
+            width: 13px
+    &--active  
+        span   
+            &:first-child
+                display: none    
+            &:nth-child(2)
+                transform: rotate(45deg)
+            &:last-child
+                transform: rotate(-45deg)
 .search
     &__content
         position: absolute

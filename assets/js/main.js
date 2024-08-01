@@ -476,6 +476,7 @@ const swiper3 = new Swiper('.sales__slider', {
             slidesPerView: 3,
         },
         680: {
+            spaceBetween: 16,
             slidesPerView: 3,
         },
         400: {
@@ -484,6 +485,7 @@ const swiper3 = new Swiper('.sales__slider', {
         0: {
             slidesPerView: 1.5,
             centeredSlides: false,
+            spaceBetween: 8,
         }
     }
 });

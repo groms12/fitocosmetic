@@ -377,12 +377,37 @@
         font-size: 18px
         text-align: center
         margin-bottom: 10px
+.swiper-pagination
+    display: none
+.card-links
+    display: none
+    align-items: center
+    justify-content: space-between   
+    &__right
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        .card-links__item
+            margin-right: 4px
+    &__item
+        padding: 6px
+        border-radius: 8px
+        border: 1px solid $gray06
+        height: 36px
+        img, svg
+            width: 24px
+            height: 24px
+            fill: $gray04
 @media screen and ( max-width: 1290px )
     .product-card__slider
         margin-right: 0
     .swiper-pagination-1
         left: -40px
 @media screen and ( max-width: 950px )
+    .card-links
+        display: flex
+    .swiper-pagination
+        display: block
     .swiper-pagination-1
         display: none
     .product-card__slider
@@ -395,7 +420,9 @@
     .product-card__slider .swiper-slide
         border: none
     .product-card
-        padding-top: 20px
+        padding-top: 0px
+        .container
+            padding: 0 16px
         &__content
             flex-direction: column
         &__left
@@ -414,6 +441,32 @@
     .container-2
         padding: 0 16px !important
 @media screen and ( max-width: 680px )
+    .product-card__hit .popular__content
+        padding: 0 16px
+    .product-card__hit        
+        margin-bottom: 60px
+    .product-card__advant
+        margin: 20px 0
+        flex-basis: 32%
+        p
+            text-align: left
+    .main__title 
+        font-size: 28px !important
+        font-weight: 700 !important
+        line-height: 36px    !important    
+    .product-card
+        .title--small 
+            font-size: 28px
+            font-weight: 700
+            line-height: 36px
+        &__title
+            font-size: 19px
+            line-height: 28px
+            letter-spacing: -0.01em
+        &__brand
+            display: none
+        &__right
+            margin-top: 32px
     .rewievs
         padding-top: 32px
     .hit

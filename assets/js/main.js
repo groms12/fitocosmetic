@@ -339,6 +339,11 @@ $('.product-card__color').click(function() {
 });
 $('.product-card__title').click(function() {
     $(this).parent('.product-card__data').toggleClass('product-card__data--active');
+    if ($(this).children('.icon').children('use').attr('xlink:href') == 'assets/img/icons/sprite.svg#plus') {
+        $(this).children('.icon').children('use').attr('xlink:href', 'assets/img/icons/sprite.svg#minus');
+    } else {
+        $(this).children('.icon').children('use').attr('xlink:href', 'assets/img/icons/sprite.svg#plus');
+    }
 });
 $('.swiper_pagination_img').click(function() {
     $('.swiper_pagination_img').removeClass('swiper_pagination_img--active');

@@ -3292,9 +3292,13 @@ input {
   }
   .sales__banner {
     height: 112px;
+    margin-bottom: 24px;
   }
   .sales__banner img {
     border-radius: 12px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
   }
   .new__title {
     padding-left: 4px;
@@ -3361,7 +3365,7 @@ input {
     max-width: 241px;
   }
   .sales__banner {
-    height: 100%;
+    height: 96px;
   }
   .card {
     padding: 10px;

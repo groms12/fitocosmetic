@@ -461,7 +461,6 @@ const swiper0 = new Swiper('.popular__slider-1', {
 });
 const swiper3 = new Swiper('.sales__slider', {
     slidesPerView: 4,
-    spaceBetween: 16,
     navigation: {
         nextEl: '.swiper-button-next2',
         prevEl: '.swiper-button-prev2',

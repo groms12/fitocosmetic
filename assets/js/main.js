@@ -364,17 +364,32 @@ const swiper = new Swiper('.slider', {
 });
 const swiperProduct = new Swiper('.product-card__slider', {
     slidesPerView: 1,
-    pagination: {
-        el: '.swiper-pagination-1',
-        bulletClass: 'swiper_pagination_img',
-        clickable: true,
-        type: 'custom',
-    },
+    // pagination: {
+    //     el: '.swiper-pagination-1',
+    //     bulletClass: 'swiper_pagination_img',
+    //     clickable: true,
+    //     type: 'custom',
+    // },
     loop: true,
     centeredSlides: true,
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
+    breakpoints: {
+        0: {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        },
+        950: {
+            pagination: {
+                el: '.swiper-pagination-1',
+                bulletClass: 'swiper_pagination_img',
+                clickable: true,
+                type: 'custom',
+            },
+        }
+    }
 });
 const swiper1 = new Swiper('.hero__slider', {
     slidesPerView: 1,

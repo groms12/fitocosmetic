@@ -252,6 +252,7 @@
         &-slide
             border: 1px solid $gray04
             border-radius: 32px
+            overflow: hidden
             img
                 width: 100%
                 height: 100%
@@ -376,8 +377,25 @@
         font-size: 18px
         text-align: center
         margin-bottom: 10px
-@media screen and ( max-width: 840px )
+@media screen and ( max-width: 1290px )
+    .product-card__slider
+        margin-right: 0
+    .swiper-pagination-1
+        left: -40px
+@media screen and ( max-width: 950px )
+    .swiper-pagination-1
+        display: none
+    .product-card__slider
+        margin: auto
+        padding-bottom: 30px
+        max-height: calc(594px + 30px)
+        width: 100%
+    .swiper-pagination-bullet-active
+        background: $gray02 !important
+    .product-card__slider .swiper-slide
+        border: none
     .product-card
+        padding-top: 20px
         &__content
             flex-direction: column
         &__left

@@ -74,6 +74,8 @@ footer
         display: none
 .subscribe
     margin-top: 40px
+    &--mobile
+        display: none
     &__form
         position: relative
         cursor: pointer
@@ -110,6 +112,12 @@ footer
         .container
             padding: 0 16px
 @media screen and ( max-width: 700px )
+    .subscribe
+        display: none
+        &--mobile
+            display: block
+            margin-bottom: 40px
+            width: 100%
     .footer
         &__menu
             flex-direction: column

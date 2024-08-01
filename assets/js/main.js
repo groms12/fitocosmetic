@@ -470,9 +470,11 @@ const swiper3 = new Swiper('.sales__slider', {
     breakpoints: {
         1360: {
             slidesPerView: 4,
+            spaceBetween: 16,
         },
         1050: {
             slidesPerView: 3,
+            spaceBetween: 16,
         },
         680: {
             spaceBetween: 16,
@@ -480,6 +482,7 @@ const swiper3 = new Swiper('.sales__slider', {
         },
         400: {
             slidesPerView: 2,
+            spaceBetween: 8,
         },
         0: {
             slidesPerView: 1.5,

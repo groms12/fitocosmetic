@@ -230,6 +230,8 @@
 .swiper-button-prev4, .swiper-button-next4
     margin: auto
     margin-top: -5%
+.new__content .card:nth-child(n+11)
+    display: none
 .banner
     margin-bottom: 80px
     &__content
@@ -332,6 +334,8 @@
         &__item
             min-height: 120px
 @media screen and ( max-width: 840px )
+    .new__content .card:nth-child(n+7)
+        display: none
     .banner
         &__title
             font-size: 44px

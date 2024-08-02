@@ -337,6 +337,12 @@ $('.product-card__color').click(function() {
     var name = $(this).attr('data-name');
     $('.product-card__name-color').text(name);
 });
+$('.new--more').click(function() {
+    var count = 10
+    if (window.screen.width < 840) {
+        count = 6;
+    }
+});
 $('.product-card__title').click(function() {
     $(this).parent('.product-card__data').toggleClass('product-card__data--active');
     if ($(this).children('.icon').children('use').attr('xlink:href') == 'assets/img/icons/sprite.svg#plus') {

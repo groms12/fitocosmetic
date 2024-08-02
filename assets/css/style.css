@@ -4195,6 +4195,10 @@ input {
   margin-top: -5%;
 }
 
+.new__content .card:nth-child(n+11) {
+  display: none;
+}
+
 .banner {
   margin-bottom: 80px;
 }
@@ -4346,6 +4350,9 @@ input {
 }
 
 @media screen and (max-width: 840px) {
+  .new__content .card:nth-child(n+7) {
+    display: none;
+  }
   .banner__title {
     font-size: 44px;
     line-height: 48px;

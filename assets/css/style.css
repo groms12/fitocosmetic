@@ -883,6 +883,9 @@ input {
   color: rgba(23, 26, 35, 0.8);
   transition: all 0.3s;
 }
+.filter-brand__item:nth-child(n+11) {
+  display: none;
+}
 .filter-brand__item:hover {
   color: rgb(87, 155, 17);
   background-color: rgb(220, 237, 204);

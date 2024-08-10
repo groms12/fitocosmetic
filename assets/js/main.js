@@ -337,10 +337,21 @@ $('.product-card__color').click(function() {
     var name = $(this).attr('data-name');
     $('.product-card__name-color').text(name);
 });
+var count = 11;
+var step = 10;
+if (window.screen.width < 841) {
+    count = 7;
+    step = 6;
+}
 $('.new--more').click(function() {
-    var count = 10
-    if (window.screen.width < 840) {
-        count = 6;
+    let maxCount = $('.new__content .card').length;
+    if (count <= maxCount) {
+        $('.new__content .card').css('display', 'block');
+        $('.new__content .card:nth-child(n+' + (count + step) + ')').css('display', 'none');
+        count = count + step;
+        if (count >= maxCount) {
+            $(this).css('display', 'none');
+        }
     }
 });
 $('.product-card__title').click(function() {

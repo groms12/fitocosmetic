@@ -3732,6 +3732,33 @@ input {
   color: rgba(32, 38, 56, 0.6);
 }
 
+.buy__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(36, 43, 69, 0.1);
+}
+.buy__name {
+  margin-bottom: 8px;
+  line-height: 24px;
+  color: #171A23;
+}
+.buy__link {
+  color: rgb(87, 155, 17);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.buy__right {
+  height: 144px;
+}
+.buy__right img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 @media screen and (max-width: 900px) {
   .certificates__left {
     display: none;

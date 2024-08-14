@@ -1787,6 +1787,10 @@ input {
   border: 1px solid rgb(87, 155, 17);
 }
 
+.orders__items {
+  width: 100%;
+}
+
 .dop__left input {
   background-color: transparent;
   font-style: normal;
@@ -3635,6 +3639,107 @@ input {
   .stock__img {
     border-radius: 0px;
     margin-top: 0;
+  }
+}
+.certificates {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 16px;
+}
+.certificates__left {
+  flex-basis: 25%;
+}
+.certificates__link {
+  font-family: "TT Norms", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(32, 38, 56, 0.6);
+  display: block;
+  margin-bottom: 8px;
+}
+.certificates__link--active {
+  color: #000;
+}
+.certificates__items {
+  max-width: 656px;
+  width: 100%;
+}
+
+.certificate {
+  padding: 16px;
+  background-color: rgba(36, 43, 69, 0.03);
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.certificate__num {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(32, 38, 56, 0.6);
+  margin-bottom: 12px;
+}
+.certificate__name {
+  font-size: 17px;
+  line-height: 24px;
+  color: #171A23;
+  margin-bottom: 12px;
+}
+.certificate__data {
+  border-top: 1px solid rgba(36, 43, 69, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  justify-content: flex-start;
+}
+.certificate__img {
+  flex-basis: 60%;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4E8616;
+}
+.certificate__title {
+  flex-basis: 40%;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(32, 38, 56, 0.6);
+}
+.certificate__search {
+  margin-top: 40px;
+  position: relative;
+  border-bottom: 1px solid rgba(36, 43, 69, 0.2);
+  margin-bottom: 16px;
+}
+.certificate__search .search__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+}
+.certificate__search input[type=search] {
+  width: 100%;
+  padding: 14px;
+  padding-right: 34px;
+  padding-left: 0;
+  font-family: "TT Norms", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: rgba(32, 38, 56, 0.6);
+}
+
+@media screen and (max-width: 900px) {
+  .certificates__left {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  .certificates {
+    padding: 0 16px;
   }
 }
 .modal {

@@ -1,0 +1,81 @@
+.certificates
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    padding-top: 16px
+    &__left
+        flex-basis: 25%
+    &__link
+        font-family: 'TT Norms', sans-serif
+        font-style: normal
+        font-weight: 500
+        font-size: 17px
+        line-height: 20px
+        color: rgba(32, 38, 56, 0.6)
+        display: block
+        margin-bottom: 8px
+        &--active
+            color: #000
+    &__items
+        max-width: 656px
+        width: 100%
+.certificate        
+    padding: 16px
+    background-color: $gray07
+    border-radius: 16px
+    margin-bottom: 16px
+    &__num
+        font-size: 14px
+        line-height: 16px
+        color: rgba(32, 38, 56, 0.6)
+        margin-bottom: 12px
+    &__name
+        font-size: 17px
+        line-height: 24px
+        color: #171A23
+        margin-bottom: 12px
+    &__data
+        border-top: 1px solid $gray05
+        display: flex
+        align-items: center
+        padding: 12px 0
+        justify-content: flex-start
+    &__img
+        flex-basis: 60%
+        font-size: 14px
+        line-height: 16px
+        color: #4E8616
+    &__title
+        flex-basis: 40%
+        font-size: 14px
+        line-height: 16px
+        color: rgba(32, 38, 56, 0.6)
+    &__search
+        margin-top: 40px
+        position: relative
+        border-bottom: 1px solid $gray04
+        margin-bottom: 16px
+        .search__img
+            position: absolute
+            top: 0
+            bottom: 0
+            margin: auto
+            right: 0
+        input[type="search"]
+            width: 100%
+            padding: 14px
+            padding-right: 34px
+            padding-left: 0
+            font-family: 'TT Norms', sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 17px
+            line-height: 20px
+            letter-spacing: -0.02em
+            color: rgba(32, 38, 56, 0.6)
+@media screen and ( max-width: 900px )
+    .certificates__left
+        display: none                
+@media screen and ( max-width: 750px )
+    .certificates
+        padding: 0 16px

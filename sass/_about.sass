@@ -1,0 +1,143 @@
+.about
+    .container>div
+        margin-bottom: 64px
+        margin-top: 24px
+    &__banner
+        height: 684px
+        border-radius: 32px
+        width: 100%
+        overflow: hidden
+        img
+            height: 100%
+            width: 100%
+            object-fit: cover
+    &__mission
+        display: flex
+        align-items: stretch
+        justify-content: space-between
+        padding: 64px
+        background: $gray07
+        border-radius: 36px
+.advantages
+    display: flex
+    align-items: start
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+        background-color: #E9F6F6        
+        padding: 32px
+        border-radius: 36px
+        height: 330px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        flex-basis: 24%
+    &__text
+        font-weight: 700
+        font-size: 22px
+        line-height: 28px
+        color: $black
+    &__img
+        max-width: 168px
+        height: 168px
+        object-fit: cover
+        border-radius: 16px 
+.way
+    background-color: $gray07   
+    padding: 64px
+    border-radius: 36px
+    &__title
+        font-weight: 700
+        font-size: 44px
+        line-height: 48px
+        color: #4E8616    
+        margin-bottom: 24px
+    &__text
+        font-weight: 700
+        font-size: 28px
+        line-height: 36px
+        max-width: 459px
+        margin-bottom: 48px
+    .line-green
+        width: 100%
+        height: 1px
+        display: block
+        background-color: #4E8616
+        margin-bottom: 24px
+.timeline
+    display: flex
+    align-items: start
+    justify-content: space-between
+    &__item
+        flex-basis: 18%
+    &__year
+        margin-bottom: 16px
+        font-weight: 700
+        font-size: 28px
+        line-height: 36px
+        color: #4E8616
+    &__text
+        font-size: 14px
+        line-height: 20px
+        color: rgba(23, 26, 35, 0.8)
+.mission
+    &__title
+        font-weight: 700
+        font-size: 64px
+        line-height: 100%
+        color: #4E8616
+        margin-bottom: 24px
+    &__text
+        font-weight: 700
+        font-size: 28px
+        line-height: 36px
+        color: #171A23
+    &__left
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__item
+        display: flex
+        align-items: start
+        justify-content: flex-start
+        &:not(:last-child)
+            margin-bottom: 32px
+        img
+            margin-right: 29px
+    &__desc
+        font-size: 17px
+        line-height: 24px
+        color: rgba(23, 26, 35, 0.8)
+@media screen and ( max-width: 1050px )
+    .mission
+        flex-direction: column
+        &__left
+            margin-bottom: 36px
+            img
+                margin-top: 24px
+    .advantages__item
+        flex-basis: 49%
+        margin-bottom: 20px
+    .timeline
+        overflow: scroll
+        &__item
+            min-width: 150px
+@media screen and ( max-width: 750px )
+    .about
+        padding: 0 16px
+        &__mission, &__way
+            padding: 24px
+        &__banner
+            height: 400px
+    .advantages__item
+        padding: 16px
+        height: 300px        
+    .mission, .way
+        &__title
+            font-size: 40px
+        &__text
+            font-size: 20px
+            line-height: 26px
+@media screen and ( max-width: 500px )
+    .advantages__item
+        flex-basis: 100%

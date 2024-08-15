@@ -3641,6 +3641,192 @@ input {
     margin-top: 0;
   }
 }
+.about .container > div {
+  margin-bottom: 64px;
+  margin-top: 24px;
+}
+.about__banner {
+  height: 684px;
+  border-radius: 32px;
+  width: 100%;
+  overflow: hidden;
+}
+.about__banner img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about__mission {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 64px;
+  background: rgba(36, 43, 69, 0.03);
+  border-radius: 36px;
+}
+
+.advantages {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advantages__item {
+  background-color: #E9F6F6;
+  padding: 32px;
+  border-radius: 36px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 24%;
+}
+.advantages__text {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: rgb(23, 26, 35);
+}
+.advantages__img {
+  max-width: 168px;
+  height: 168px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+
+.way {
+  background-color: rgba(36, 43, 69, 0.03);
+  padding: 64px;
+  border-radius: 36px;
+}
+.way__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 48px;
+  color: #4E8616;
+  margin-bottom: 24px;
+}
+.way__text {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  max-width: 459px;
+  margin-bottom: 48px;
+}
+.way .line-green {
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #4E8616;
+  margin-bottom: 24px;
+}
+
+.timeline {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.timeline__item {
+  flex-basis: 18%;
+}
+.timeline__year {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #4E8616;
+}
+.timeline__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(23, 26, 35, 0.8);
+}
+
+.mission__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100%;
+  color: #4E8616;
+  margin-bottom: 24px;
+}
+.mission__text {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #171A23;
+}
+.mission__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mission__item {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+}
+.mission__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mission__item img {
+  margin-right: 29px;
+}
+.mission__desc {
+  font-size: 17px;
+  line-height: 24px;
+  color: rgba(23, 26, 35, 0.8);
+}
+
+@media screen and (max-width: 1050px) {
+  .mission {
+    flex-direction: column;
+  }
+  .mission__left {
+    margin-bottom: 36px;
+  }
+  .mission__left img {
+    margin-top: 24px;
+  }
+  .advantages__item {
+    flex-basis: 49%;
+    margin-bottom: 20px;
+  }
+  .timeline {
+    overflow: scroll;
+  }
+  .timeline__item {
+    min-width: 150px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .about {
+    padding: 0 16px;
+  }
+  .about__mission, .about__way {
+    padding: 24px;
+  }
+  .about__banner {
+    height: 400px;
+  }
+  .advantages__item {
+    padding: 16px;
+    height: 300px;
+  }
+  .mission__title, .way__title {
+    font-size: 40px;
+  }
+  .mission__text, .way__text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .advantages__item {
+    flex-basis: 100%;
+  }
+}
 .certificates {
   display: flex;
   align-items: flex-start;

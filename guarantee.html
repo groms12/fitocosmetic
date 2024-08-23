@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Корзина</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__media">
+            <div class="container">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="index.html"><img src="assets/img/icons/logo-media.svg" alt="logo"></a>
+                <img src="assets/img/icons/search.svg" alt="поиск" class="mobile-search">
+                <div class="search__media">
+                    <div class="search__header">
+                        <img src="assets/img/icons/arrow-back.svg" alt="<-" class="search-back">
+                        <div class="search__inp">
+                            <input type="search" name="" id="" placeholder="Поиск по каталогу">
+                            <img src="assets/img/icons/search.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="search__results">
+                        <a href="catalog.html" class="search__text">Шампунь</a>
+                        <a href="catalog.html" class="search__text">Восстанавливающий шампунь</a>
+                        <a href="catalog.html" class="search__text">Шампунь для объема</a>
+                        <a href="catalog.html" class="search__text">Профессиональный шампунь</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__media-bottom media-bottom">
+                <div class="container">
+                    <div class="media-bottom__items">
+                        <a href="index.html" class="media-bottom__item media-bottom__item--active">
+                            <img src="assets/img/icons/home.svg" alt=""><span>Главная</span>
+                        </a>
+                        <a href="catalog.html" class="media-bottom__item">
+                            <img src="assets/img/icons/catalog.svg" alt=""><span>Каталог</span>
+                        </a>
+                        <a href="basket.html" class="media-bottom__item">
+                            <img src="assets/img/icons/heart.svg" alt=""><span>Избранное</span>
+                        </a>
+                        <a href="basket.html" class="media-bottom__item">
+                            <img src="assets/img/icons/bag.svg" alt=""><span>Корзина</span>
+                        </a>
+                        <a href="index.html" class="media-bottom__item">
+                            <img src="assets/img/icons/user.svg" alt=""><span>Профиль</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu__media">
+            <div class="header__city">
+                <img src="assets/img/icons/location.svg" alt="place">
+                <span>Москва</span>
+            </div>
+            <div class="menu__media-items">
+                <a href="catalog.html">Каталог</a>
+                <a href="#">Акции</a>
+                <a href="catalog-brands.html">Бренды</a>
+                <span></span>
+                <a href="#">О нас</a>
+                <a href="#">Оплата и доставка</a>
+                <a href="#">Гарантия и возврат</a>
+                <a href="#">Сроки доставки</a>
+                <a href="#">Карьера</a>
+                <span></span>
+            </div>
+            <div class="menu__media-info">
+                <div class="footer__contacts">
+                    <a href="tel:88007778549" class="footer__phone">8 800 777 85 49</a>
+                    <p class="footer__time">с 09:00 до 18:00 пн-пт</p>
+                    <p class="footer__address">117420, Москва, ул. Намёткина, 12а</p>
+                    <div class="footer__social">
+                        <a href="#"><img src="assets/img/icons/telegram.svg" alt="telegramm" class="footer__icon"></a>
+                        <a href="#"><img src="assets/img/icons/vk.svg" alt="vkontakte" class="footer__icon"></a>
+                        <a href="#"><img src="assets/img/icons/classmates.svg" alt="odnoklassniky" class="footer__icon"></a>
+                        <a href="#"><img src="assets/img/icons/tiktok.svg" alt="tiktok" class="footer__icon"></a>
+                        <a href="#"><img src="assets/img/icons/pinterest.svg" alt="pinterest" class="footer__icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="modal modal--moscow">
+                <div class="modal__content">
+                    <p class="modal__agree">Город доставки</p>
+                    <p class="modal__city">Москва</p>
+                    <div class="modal__btns">
+                        <div class="btn btn-yes">Да, верно</div>
+                        <div class="btn btn--light btn-no">Нет, другой</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal--done">
+                <div class="modal__content">
+                    <p class="modal__agree">Условия доставки пересчитанны с учетом вашего региона доставки</p>
+                    <div class="modal__btns">
+                        <div class="btn">Понятно</div>
+                        <div class="btn btn--light">Подробнее</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__city">
+                        <img src="assets/img/icons/location.svg" alt="place">
+                        <span>Москва</span>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="#" class="menu__link">Для бизнеса</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Где купить</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Гарантия и возврат</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu__link">Карьера</a>
+                        </li>
+                        <ul class="menu menu__contacts">
+                            <li>
+                                <a href="#" class="menu__link menu__link--gray">пн-пт с 9 до 18 </a>
+                            </li>
+                            <li>
+                                <a href="tel:88007778549" class="menu__link">8 800 777 85 49</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header__block">
+            <div class="container">
+                <div class="header__content">
+                    <a href="index.html" class="logo">
+                        <img src="assets/img/icons/logo.svg" alt="Fitocosmetic">
+                    </a>
+                    <div class="header-catalog">
+                        <div class="catalog-content">
+                            <ul class="catalog-item">
+                                <li class="item-li item-li--active">
+                                    <span>Волосы</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Окрашивание</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Лицо</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Тело</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Макияж</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Уход за полостью рта</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Уход за домом</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Детская косметика</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Солнцезащитные средства</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Подарочные наборы</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Акции</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                                <li class="item-li">
+                                    <span>Бренды</span><img src="assets/img/icons/arrow-down.svg" alt=">">
+                                </li>
+                            </ul>
+                            <ul class="catalog-item">
+                                <div class="item-dop item-dop--active">
+                                    <p class="title">Волосы</p>
+                                    <li class="item-li"><a href="catalog.html">Все товары категории</a></li>
+                                    <li class="item-li item-li--active"><a href="catalog.html">Шампуни</a></li>
+                                    <li class="item-li"><a href="catalog.html">Бальзамы </a></li>
+                                    <li class="item-li"><a href="catalog.html">Маски, масла</a></li>
+                                    <li class="item-li"><a href="catalog.html">Спреи</a></li>
+                                    <li class="item-li"><a href="catalog.html">Подарочные наборы</a></li>
+                                </div>
+                                <div class="item-dop">
+                                    <p class="title">Окрашивание</p>
+                                    <li class="item-li"><a href="catalog.html">Все товары категории</a></li>
+                                    <li class="item-li item-li--active"><a href="catalog.html">Шампуни</a></li>
+                                    <li class="item-li"><a href="catalog.html">Бальзамы </a></li>
+                                    <li class="item-li"><a href="catalog.html">Маски, масла</a></li>
+                                    <li class="item-li"><a href="catalog.html">Спреи</a></li>
+                                    <li class="item-li"><a href="catalog.html">Подарочные наборы</a></li>
+                                </div>
+                                <div class="item-dop">
+                                    <p class="title">Лицо</p>
+                                    <li class="item-li"><a href="catalog.html">Все товары категории</a></li>
+                                    <li class="item-li item-li--active"><a href="catalog.html">Шампуни</a></li>
+                                    <li class="item-li"><a href="catalog.html">Бальзамы </a></li>
+                                    <li class="item-li"><a href="catalog.html">Маски, масла</a></li>
+                                    <li class="item-li"><a href="catalog.html">Спреи</a></li>
+                                    <li class="item-li"><a href="catalog.html">Подарочные наборы</a></li>
+                                </div>
+                            </ul>
+                            <div class="catalog-item"><img src="assets/img/banners/sales-slide-3.jpg" alt="" class="catalog-banner"></div>
+                        </div>
+                        <div class="btn catalog__btn">
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icons/sprite.svg#menu"></use>
+                            </svg>
+                            <span>Каталог</span>
+                        </div>
+                        <div class="search header__search">
+                            <form action="/search/" method="get">
+                                <input type="search" placeholder="Поиск по каталогу">
+                                <img src="assets/img/icons/search.svg" alt="search" class="search__img">
+                                <div class="search__content">
+                                    <a href="catalog.html" class="search__text">Шампунь</a>
+                                    <a href="catalog.html" class="search__text">Восстанавливающий шампунь</a>
+                                    <a href="catalog.html" class="search__text">Шампунь для объема</a>
+                                    <a href="catalog.html" class="search__text">Профессиональный шампунь</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <a class="icons__link" href="#">
+                            <span class="num box__num">7</span>
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icons/sprite.svg#box"></use>
+                            </svg>
+                        </a>
+                        <a class="icons__link" href="#">
+                            <span class="num heart__num">18</span>
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icons/sprite.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <a class="icons__link" href="personal.html">
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icons/sprite.svg#user"></use>
+                            </svg>
+                        </a>
+                        <a class="icons__link" href="basket.html">
+                            <span class="num basket__num">6</span>
+                            <svg class="icon">
+                                <use xlink:href="assets/img/icons/sprite.svg#bag"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__content">
+                    <a href="index.html" class="link">Главная</a>
+                    <span>—</span>
+                    <a href="certificates.html" class="link">Сертификаты</a>
+                </div>
+            </div>
+        </section>
+        <section class="orders">
+            <div class="container">
+                <div class="certificates">
+                    <ul class="certificates__left">
+                        <li>
+                            <a href="#" class="certificates__linke">Оплата и доставка</a>
+                        </li>
+                        <li>
+                            <a href="#" class="certificates__link certificates__link--activ">Гарантия и возврат</a>
+                        </li>
+                        <li>
+                            <a href="#" class="certificates__link">Сроки доставки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="certificates__link">Сертификаты </a>
+                        </li>
+                        <li>
+                            <a href="#" class="certificates__link">Где купить</a>
+                        </li>
+                    </ul>
+                    <div class="pay">
+                        <h1 class="title certificates__title">Гарантия и возврат</h1>
+                        <div class="pay__content">
+                            <p class="pay__title">Получение заказа</p>
+                            <ul class="pay__list">
+                                <li class="pay__item pay__text">Проверьте внешнюю упаковку (коробку) Заказа. Если внешняя упаковка повреждена, сделайте несколько фотографий, которые позволят определить причину повреждения. При получении поврежденного заказа в почтовом отделении «Почта
+                                    России» — необходимо составить Акт в рамках правил приема/отправки почтовых посылок и бандеролей в почтовом отделении.</li>
+                                <li class="pay__item pay__text">После вскрытия внешней упаковки (короба) внимательно осмотрите внешний вид, комплектность и сохранность товара. Проверьте соответствие привезенного Товара заказанному по ассортименту и количеству, а так же проверьте продукцию,
+                                    входящую в заказ на наличие/отсутствие дефектов.</li>
+                            </ul>
+                            <p class="pay__text">Дефектами товара являются поврежденная, сильно замятая упаковка, подтеки, сколы, повреждения, осадок, измененный цвет и структура продукта, отсутствие более 30% продукции в емкости. Внешние и внутренние дефекты определяются
+                                без вскрытия заводской упаковки путем внешнего осмотра Товара.</p>
+                            <p class="pay__text">
+                                Если Вы получили Товар, подписали документы о его надлежащем качестве и уже после этого обнаружили заводской дефект, этот товар подлежит обмену или возврату с компенсацией стоимости Товара.
+                            </p>
+                            <p class="pay__title">Возврат</p>
+                            <p class="pay__text">Для возврата денежных средств в случае обнаружения заводского дефекта продукта Вам необходимо:</p>
+                            <ul class="pay__list">
+                                <li class="pay__item pay__text">написать претензию на электронную почту интернет-магазина <a href="mailto:shop@fitocosmetic.ru" class="pay__text pay__text--green">shop@fitocosmetic.ru</a> с обязательным указанием темы «Претензия» в заголовке письма и
+                                    приложением фотографий подтверждающих дефект. Претензия будет рассмотрена в течение 5 рабочих дней;</li>
+                                <li class="pay__item pay__text">для помощи в составлении претензии вы можете связаться с оператором интернет-магазина по бесплатному номеру <a href="tel:88007778549" class="pay__text pay__text--green">8 (800) 777 85 49</a> (пн-пт, с 9.00 до 18.00).</li>
+                            </ul>
+                            <p class="pay__text">При обмене/возврате Вам будет необходимо предъявить сам товар и сопроводительные документы к Заказу. </p>
+                            <p class="pay__text">При принятии положительного решения о возврате Товара, денежные средства за Товар будут возвращены на счет, с которого была произведена оплата заказа, в течение 10 дней с момента получения возвращенного товара на складе интернет-магазина.
+                            </p>
+                            <p class="pay__text">Затраты Покупателя на обратную отправку товара через службу «Почта России» (обычная бандероль, без страховки и заявленной ценности) также будут компенсированы. </p>
+                            <a href="#" class="pay__text pay__text--green">Заявление на возврат денежных средств</a>
+                            <p class="pay__title">Примечание</p>
+                            <ol class="pay__list pay__list--num">
+                                <li class="pay__item pay__text">Согласно постановлению Правительства Российской Федерации от 19 января 1998 г. N55 «парфюмерия и косметика" надлежащего качества не подлежат возврату и обмену (в ред. Постановления Правительства РФ от 20.10.1998 N1222).</li>
+                                <li class="pay__item pay__text">Полученный товар должен соответствовать описанию на сайте. Отличие элементов дизайна или оформления от заявленных в описании на сайте не является неисправностью или дефектом товара.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <img src="assets/img/icons/big-logo.svg" alt="fitocosmetic" class="footer__logo">
+                <div class="footer__content">
+                    <div class="footer__menu">
+                        <div class="footer__items">
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="link footer__link footer__link--active">
+                                        О компании 
+                                        <svg class="icon footer__media">
+                                            <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">О нас</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Новости</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Блог</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Наши бренды</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Вакансии</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__items">
+                            <ul class="footer__links">
+                                <li><a href="#" class="link footer__link footer__link--active">Покупателям 
+                                    <svg class="icon footer__media">
+                                        <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                    </svg></a></li>
+                                <li><a href="#" class="link footer__link">Оплата и доставка</a></li>
+                                <li><a href="#" class="link footer__link">Гарантия и возврат</a></li>
+                                <li><a href="#" class="link footer__link">Сроки доставки</a></li>
+                                <li><a href="#" class="link footer__link">Сертификаты на продукцию</a></li>
+                                <li><a href="#" class="link footer__link">Где купить</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__items">
+                            <ul class="footer__links">
+                                <li>
+                                    <a href="#" class="link footer__link footer__link--active">Бизнесу 
+                                        <svg class="icon footer__media">
+                                            <use xlink:href="assets/img/icons/sprite.svg#plus"></use>
+                                        </svg></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Контрактное производство</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link footer__link">Оптовые закупки</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__items">
+                            <div class="subscribe">
+                                <span class="footer__link--active">Подписка на рассылку</span>
+                                <div class="subscribe__form">
+                                    <input type="email" placeholder="Введите e-mail">
+                                    <img src="assets/img/icons/next.svg" alt="->">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <a href="tel:88007778549" class="footer__phone">8 800 777 85 49</a>
+                        <p class="footer__time">с 09:00 до 18:00 пн-пт</p>
+                        <p class="footer__address">117420, Москва, ул. Намёткина, 12а</p>
+                        <div class="footer__social">
+                            <a href="#"><img src="assets/img/icons/telegram.svg" alt="telegramm" class="footer__icon"></a>
+                            <a href="#"><img src="assets/img/icons/vk.svg" alt="vkontakte" class="footer__icon"></a>
+                            <a href="#"><img src="assets/img/icons/classmates.svg" alt="odnoklassniky" class="footer__icon"></a>
+                            <a href="#"><img src="assets/img/icons/tiktok.svg" alt="tiktok" class="footer__icon"></a>
+                            <a href="#"><img src="assets/img/icons/pinterest.svg" alt="pinterest" class="footer__icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <p class="footer__about">© 2024, ООО «Фитокосметик»</p>
+                    <a href="#" class="footer__doc link footer__link">Публичная оферта</a>
+                    <a href="#" class="footer__doc link footer__link">Политика конфидециальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+    <script>
+        $("#phone").mask("+7 (999) 999-9999");
+    </script>
+</body>
+
+</html>

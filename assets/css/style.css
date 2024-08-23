@@ -3827,6 +3827,50 @@ input {
     flex-basis: 100%;
   }
 }
+.pay {
+  max-width: 50%;
+}
+.pay__title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #171A23;
+}
+.pay__text {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #171A23;
+}
+.pay__text--green {
+  color: rgb(87, 155, 17);
+}
+.pay__text--bold {
+  font-weight: 500;
+}
+.pay__text--note {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(23, 26, 35, 0.8);
+}
+.pay__list {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+.pay__list--num {
+  list-style-type: decimal;
+}
+
+@media screen and (max-width: 900px) {
+  .pay {
+    max-width: 100%;
+  }
+}
 .certificates {
   display: flex;
   align-items: flex-start;

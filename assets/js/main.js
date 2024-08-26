@@ -354,8 +354,9 @@ $('.new--more').click(function() {
         }
     }
 });
-$('.questions__item').click(function() {
-    $(this).children('.questions__text').toggleClass('.questions__text--active');
+$('.questions__title').click(function() {
+    $(this).parent('.questions__item').children('.questions__text').toggleClass('questions__text--active');
+    $(this).children('.questions__img').toggleClass('questions__img--active');
 });
 $('.product-card__title').click(function() {
     $(this).parent('.product-card__data').toggleClass('product-card__data--active');

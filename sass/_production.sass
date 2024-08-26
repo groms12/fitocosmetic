@@ -110,7 +110,12 @@
         display: none
         &--active
             display: block
-
+    &__img
+        background: url("../img/icons/plus-black.svg") no-repeat center
+        height: 16px
+        width: 16px
+        &--active
+            background: url("../img/icons/minus-black.svg") no-repeat center
 @media screen and ( max-width: 1024px )
     .step-2
         .step__content
@@ -151,3 +156,6 @@
                     flex-direction: column
                 .step__info
                     margin-left: 0
+@media screen and ( max-width: 540px )
+    .steps__content
+        padding: 80px 20px

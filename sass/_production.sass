@@ -1,0 +1,153 @@
+.steps
+    &__content
+        text-align: center
+        width: 100%
+        padding: 80px
+        border-radius: 36px
+        background: linear-gradient($gray07, $gray07), url('../img/bg/list-3.png') no-repeat bottom right 100px, url('../img/bg/list-2.png') no-repeat top left -80px 
+    &__title
+        font-weight: 700
+        font-size: 64px
+        line-height: 100%
+        color: #4E8616
+        margin-bottom: 12px
+    &__subtitle
+        font-weight: 700
+        font-size: 44px
+        line-height: 48px
+        color: #171A23
+        margin-bottom: 24px
+    &__text
+        max-width: 600px
+        font-weight: 500
+        font-size: 19px
+        line-height: 28px
+        color: #171A23
+        margin: auto
+        margin-bottom: 24px
+    &__btn
+        max-width: fit-content
+        margin: auto
+.step
+    &-3
+        margin: 24px 0
+        .step__content
+            padding: 40px 40px 80px
+            background: rgba(242, 244, 230, 1)
+    &-2
+        margin: 24px 0
+        .step__content
+            padding: 80px 112px
+            background: linear-gradient(rgba(233, 246, 246, 1),rgba(233, 246, 246, 1)), url('../img/bg/list-3.png') no-repeat bottom right 100px, url('../img/bg/list-2.png') no-repeat top left -80px 
+    &__content
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        border-radius: 36px
+        grid-gap: 48px
+    &__text
+        font-weight: 400
+        font-size: 17px
+        line-height: 24px
+        color: #171A23
+        max-width: 384px
+    &__title
+        margin-bottom: 16px
+        max-width: 350px
+        display: flex
+        align-items: flex-start
+        span
+            display: block
+            font-weight: 700
+            font-size: 28px
+            line-height: 36px
+            color: $black
+            &:first-child
+                color: #4E8616
+                margin-right: 16px
+    &__img
+        height: 260px
+        border-radius: 16px
+        width: 100%
+        object-fit: cover
+        margin-bottom: 32px
+    &__item
+        &--white
+            padding: 24px
+            background-color: rgba(255, 255, 255, 0.6)
+            border-radius: 16px
+            .step__text
+                font-weight: 500
+                font-size: 19px
+                line-height: 28px
+                letter-spacing: -0.01em
+                color: #4E8616
+                max-width: 300px
+.questions
+    margin-top: 64px
+    .title
+        margin-bottom: 32px
+    &__item
+        background-color: $gray07   
+        border-radius: 24px
+        padding: 24px
+        margin-bottom: 8px
+    &__title
+        display: flex
+        align-items: center
+        justify-content: space-between
+        span
+            font-weight: 700
+            font-size: 22px
+            line-height: 28px
+            color: #333333
+    &__text
+        margin-top: 12px
+        font-weight: 400
+        font-size: 17px
+        line-height: 24px
+        color: #171A23
+        display: none
+        &--active
+            display: block
+
+@media screen and ( max-width: 1024px )
+    .step-2
+        .step__content
+            padding: 80px 40px
+@media screen and ( max-width: 880px )
+    .step
+        &-2
+            .step__content
+                flex-wrap: wrap
+                grid-gap: 24px
+                .step__item
+                    flex-basis: 48%
+                .step__item--white
+                    width: 100%
+                    flex-basis: 100%
+                    .step__text
+                        max-width: 100%
+        &-3
+            .step__content
+                flex-direction: column
+                .step__item
+                    display: flex
+                    align-items: flex-start
+                .step__img
+                    width: 200px
+                    height: auto
+                .step__info
+                    margin-left: 32px
+@media screen and ( max-width: 680px )
+    .step
+        &-2
+            .step__content
+                .step__item
+                    flex-basis: 100%
+        &-3
+            .step__content
+                .step__item                
+                    flex-direction: column
+                .step__info
+                    margin-left: 0

@@ -45,6 +45,8 @@
                 &~.search__content
                     z-index: 100
                     opacity: 1
+                    .search__text
+                        display: block
         img
             position: absolute
             right: 17px
@@ -166,7 +168,7 @@
     &__text
         padding: 10px 16px
         color: $gray01
-        display: block
+        display: none
         border-radius: 6px
         &:hover
             background-color: $gray06

@@ -354,6 +354,9 @@ $('.new--more').click(function() {
         }
     }
 });
+$('.questions__item').click(function() {
+    $(this).children('.questions__text').toggleClass('.questions__text--active');
+});
 $('.product-card__title').click(function() {
     $(this).parent('.product-card__data').toggleClass('product-card__data--active');
     if ($(this).children('.icon').children('use').attr('xlink:href') == 'assets/img/icons/sprite.svg#plus') {
